@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ToDo самописное</title>
+
+     <link  rel="stylesheet" href="css/app.css" />    
+ </head>
+ <body>
+     <div id="todo">
+         <div id="todo-header">
+             Оставь заметку
+         </div>
+        <ul id="todo-container">
+            <li class="todo-note">
+                <input type="checkbox" class="checked">
+                <p class="note-text ">Сделать ToDo приложение</p>
+                <input type="text" class="change-text d-none">
+                <button class="change-note">Изменить</button>
+                <button class="delete-note">Удалить</button>
+            </li>            
+        </ul>       
+        <form id="add-form">
+            <input type="text" id="add-text">
+            <button id="add-button">Добавить</button>
+        </form>
+     </div>   
+     
+     <script src="js/app.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,104 @@
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    background: #dfdfdf;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: #494949;
+    cursor: pointer;
+    min-height: 32px;
+    outline: none;
+}
+
+input{
+    outline: none;
+}
+
+input[type=text]{
+    min-height: 30px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    padding: 0 10px;
+
+}
+
+
+.d-none{
+    display: none;
+}
+
+
+#todo{
+    max-width: 60vw;
+    margin: 0 auto;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+
+#todo-header{
+    background-color: #79e980;
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+.todo-note {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.checked{
+    margin-right: 5px;
+}
+.note-text{
+    margin: 0 auto 0 0;
+    color: #494949;
+
+
+}
+.change-text{
+    margin-right: auto;
+    /* display: none; */
+}
+
+
+.change-note{
+    margin-right: 10px;
+}
+
+
+#add-form{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10%;
+}
+
+
+#add-text{
+    flex: 5 1;
+    margin-right: 10px;
+}
+
+#add-button{
+    flex: 1 1;
+}
+
+
+.completed{
+    text-decoration:line-through;
+    color: #b6b6b6;
+}
