@@ -1,0 +1,202 @@
+section.information{
+	background: var(--main_gradient);
+	border-top-right-radius: var(--section_radius);
+	border-bottom-right-radius: var(--section_radius);
+	margin-top: calc(var(--indent) * 3);
+	padding-bottom: calc(var(--indent) * 4);
+
+}
+
+.information_header h2{
+	color: var(--white);
+}
+
+.information_header  h2{
+	padding: calc(var(--indent) * 1.5) 0 calc(var(--indent) * 2) 0;
+}
+
+
+.information_content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: calc(var(--indent) * .8);
+	padding: 0  calc(var(--indent) * 2) 0 var(--indent) ;
+	    box-sizing: border-box;
+}
+
+.information_content-item{
+	background: rgba(255,255,255,.1);
+	color: var(--white);
+	text-align: center;
+	padding: calc(var(--indent) * .8) ;
+	padding-bottom: 0;
+	position: relative;
+}
+
+
+.information_content-item h2{
+	font-size: 2.5vw;
+	line-height: 2.5vw;
+	margin: var(--indent) 0 calc(var(--indent) * 1.5) 0;
+}
+
+.information_content-item p{
+	margin: 0;
+	font-size: calc(var(--text) - 3px);
+}
+
+.information_content-item .subtitle{
+	font-weight: 700;
+	font-size: var(--text);
+}
+
+.information_content-item div{
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	margin: var(--indent) 0 calc(var(--indent) * 1.2) 0;
+
+}
+
+.information_content-item div img{
+	width: 4vw;
+	margin-right: 1vw;
+}
+
+.information_content-item div h2{
+	margin: 0;
+}
+
+.information_content-item .arrow{
+	position: absolute;
+	top: calc(var(--indent) * .8) ;
+	right: calc(var(--indent) * .8) ;
+	width: 2.5vw;
+}
+
+.information_content-item:first-child{
+	border-top-left-radius: 1vw;
+}
+
+
+.information_content-item:nth-child(2){
+	border-top-right-radius: 1vw;
+}
+
+.information_content-item:nth-child(3){
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: left;
+	padding-bottom:  calc(var(--indent) * 2);
+	background-image: url(../../image/information/chart.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+    background-position-y: bottom;
+    background-size: 50% auto;
+}
+
+
+.information_content-item:nth-child(3) h2{
+	margin-bottom: calc(var(--indent) * .7);
+}
+
+.information_content-item:nth-child(4){
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.information_content-item:nth-child(4) h2{
+	margin-bottom: calc(var(--indent) * 2);
+}
+
+.information_content-item:nth-last-child(2)  h2:nth-child(2),
+.information_content-item:last-child h2:nth-child(2){
+	margin-bottom:  calc(var(--indent) / 2);
+}
+.information_content-item:nth-last-child(2)  h2:nth-child(3),
+.information_content-item:last-child h2:nth-child(3){
+	margin-top: 0;
+}
+
+
+
+/**/
+
+.information_content-item:last-child h2 img{
+	width: 2vw;
+}
+
+
+@media screen and (max-width: 768px){
+
+	.information_header  h2{
+		padding: calc(var(--indent) * 2) 0 calc(var(--indent) * 2) 0;
+	}
+
+
+	.information_content{
+		width: var(--section_widht);
+		padding-right: 0;
+	}
+
+	.information_content-item{
+		padding: calc(var(--indent) * .4);
+		padding-top: calc(var(--indent) * .8);
+
+	}
+
+	.information_content-item p {
+	    margin: 0;
+	    font-size: calc(var(--text) - 1vw);
+	}
+
+	.information_content-item h2 {
+	    font-size: 2.8vw;
+	    line-height: 2.8vw;
+	    /*margin:calc(var(--indent) * .8) 0 calc(var(--indent) * 1.3) 0;*/
+	}
+
+	.information_content-item div img {
+	    width: 6vw;
+	    margin-right: 2vw;
+	    margin-left: -8vw;
+	}
+
+	.information_content-item:nth-child(3){
+		background-size: 65% auto;
+	}
+
+	.information_content-item:nth-child(1) h2, 
+	.information_content-item:nth-child(2) h2 ,
+	.information_content-item:nth-child(3) h2 {
+		font-size: 3.5vw;
+	    line-height: 3.5vw;
+	}
+
+	.information_content-item:nth-child(4) h2 {
+	    margin-bottom: calc(var(--indent) * 1.5);
+	}
+
+	.information_content-item .arrow{
+		width: 3.5vw;
+	}
+
+
+	.information_content-item div {
+	    margin: calc(var(--indent) * .8) 0 calc(var(--indent) * .8) 0;
+	}
+
+
+
+	.information_content-item:nth-last-child(2) h2:nth-child(3),
+	.information_content-item:last-child h2:nth-child(3){
+		margin-bottom:  calc(var(--indent) * .8);
+	}
+
+
+/*	.information_content-item:last-child h2{
+		line-height: 4.5vw;
+	}*/
+
+
+}

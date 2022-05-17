@@ -1,0 +1,197 @@
+:root{
+	--size_circle:16vw;
+	--size_dote: 3vw;
+}
+
+.allocation{
+	padding-bottom: calc(var(--indent) * 4);
+}
+
+.allocation_header h2{
+	padding: calc(var(--indent) * 2) 0 calc(var(--indent) * 4) 0;
+}
+
+
+.allocation_container h2{
+	font-size: 2.5vw;
+	line-height: 2.5vw;
+	color: var(--white);
+}
+
+.allocation_container p{
+	font-size: var(--text);
+	font-weight: 700;
+	margin-top: .3vw;
+	margin-bottom: 0;
+	color: var(--white);
+}
+
+.allocation_container .circle{
+	display: block;
+	position: relative;
+	width: 50vw;
+	height: 50vw;
+	margin: 0 auto;
+	border: 1px solid var(--black);
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.allocation_container .circle_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: var(--size_circle);
+	height: var(--size_circle);
+	border-radius: 50%;
+	background: var(--main_gradient);
+	position: absolute;
+}
+
+.allocation_container .circle_item .info_window {
+    position: absolute;
+    z-index: 900;
+    width: 130%;
+    padding: 1vw;
+    border-radius: .5vw;
+    top: 80%;
+    left: 60%;
+    background: var(--white);
+    font-size: calc(var(--text) - .1vw);
+}
+
+.info_window-figure{
+	position: absolute;
+	width: 4vw;
+	height: 2vw;
+	background: var(--white);
+	top: -1.7vw;
+	left: calc(50% - 2vw);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.allocation_container .circle_item-icon{
+	width: 4vw;
+	position: absolute;
+	z-index: 400;
+	top: 0;
+	right: 0;
+}
+
+
+
+.allocation_container .circle_item p{
+	text-align: center;
+}
+
+
+.allocation_container .circle_dote{
+	position: absolute;
+	width: var(--size_dote);
+	height: var(--size_dote);
+	background: var(--table_item_last);
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.allocation_container .circle_item:first-child{
+	top: calc(50% - calc(var(--size_circle) / 2));
+	left: calc(50% - calc(var(--size_circle) / 2));
+}
+
+.allocation_container .circle_item:nth-child(2){
+	top: 0;
+	left: 0;
+}
+
+.allocation_container .circle_item:nth-child(3){
+	top: 0;
+	right: 0;
+}
+
+.allocation_container .circle_item:nth-child(4){
+	bottom: 0;
+	right: 0;
+}
+
+.allocation_container .circle_item:nth-child(5){
+	bottom: 0;
+	left: 0;
+}
+
+.allocation_container .circle_dote:nth-child(6){
+	top: calc(50% - calc(var(--size_dote) / 2));
+	left: calc(var(--size_dote) / 2 * -1);
+}
+
+.allocation_container .circle_dote:nth-child(7){
+	top: calc(var(--size_dote) / 2 * -1) ;
+	left: calc(50% - calc(var(--size_dote) / 2));
+}
+
+.allocation_container .circle_dote:nth-child(8){
+	top: calc(50% - calc(var(--size_dote) / 2));
+	right: calc(var(--size_dote) / 2 * -1);
+}
+
+.allocation_container .circle_dote:nth-child(9){
+	bottom: calc(var(--size_dote) / 2 * -1) ;
+	left: calc(50% - calc(var(--size_dote) / 2));
+}
+
+
+@media screen and (max-width: 768px){
+	:root {
+	    --size_circle: 26vw;
+	    --size_dote: 5vw;
+	}
+
+	.allocation_container .circle {
+	    position: relative;
+	    width: 72vw;
+	    height: 72vw;
+	    left: 8vw;
+	    margin: 0;
+	}
+
+	.allocation_container h2 {
+	    font-size: 4.5vw;
+	    line-height: 4.5vw;
+	    color: var(--white);
+	}
+
+	.allocation_container p {
+	    font-size: calc(var(--text) - 1vw);
+	     margin-top: 1vw;
+	}
+
+	.allocation_container .circle_item-icon {
+	    width: 7vw;
+	}
+
+
+
+	.allocation_container .circle_item .info_window {
+	    position: absolute;
+	    z-index: 900;
+	    width: 170%;
+	    padding: 2vw;
+	    border-radius: .5vw;
+	    top: 80%;
+	    left: -10%;
+	    background: var(--white);
+	    font-size: calc(var(--text) - .4vw);
+	}
+
+	.info_window-figure{
+		position: absolute;
+		width: 4vw;
+		height: 2vw;
+		background: var(--white);
+		top: -2vw;
+		left: calc(50% - 2vw);
+		clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	}
+
+}

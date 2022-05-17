@@ -1,0 +1,109 @@
+.flag_pink, .flag_burgundy {
+    display: flex;
+    padding: 20px 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    transition: .2s;
+}
+
+.flag_pink:hover, .flag_burgundy:hover{
+	transform: scale(1.05);
+}
+
+.flag_pink img, .flag_burgundy img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.flag_pink h4, .flag_burgundy h4{
+	z-index: 200;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+.tiker_box{
+	position: relative;
+
+}
+
+.tiker{
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+.marquee{
+	width: 100%;
+}
+
+
+.tiker h2{
+	font-weight: 400;
+	background: var(--gray_background);
+	background: inherit;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.tiker img{
+	margin: 0 3vw;
+}
+
+ .asymmetric_button{
+ 	background: var(--white);
+    height: 100%;
+    position: relative;
+    z-index: 100;
+ 	filter: url(#asymmetric_button_round);
+ 	padding: 1vw 3vw 1vw 1vw;
+ }
+
+ .asymmetric_button-background {
+   position: absolute;
+   display:block;
+   background:var(--white);
+   width: 100%;
+   height: 100%;
+   z-index: 200;
+   clip-path: polygon(0 0, 90% 10%, 100% 85%, 0% 100%);
+   top: 0;
+   right: 0;
+}
+
+ .asymmetric_button p{
+ 	font-size: var(--text);
+ 	margin: 0;
+ 	position: relative;
+ 	z-index: 300;
+ 	color: var(--form_title);
+ }
+
+.asymmetric_button p:first-child{
+	color: var(--subtitle_text);
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.flag_pink, .flag_burgundy {
+	    padding: calc(var(--indent) * 1.5)  0;
+	    margin-bottom: var(--indent);
+	}
+}
+
+
+
