@@ -1,0 +1,173 @@
+html{
+margin: 0;
+height: 0;
+width: 100%;
+}
+
+body{
+height: 100vh;
+margin: 0;
+height: 0;
+overflow: hidden;  
+-webkit-box-sizing: border-box;  
+        box-sizing: border-box;  
+font-family: 'Roboto Condensed', sans-serif;
+background: #212121; 
+color: rgba(98,180,231,.8);;
+}
+
+h1,h2{
+    font-size: 4vmin;
+}
+
+header{   
+width: 100%;  
+height: 90vh; 
+display: -webkit-box; 
+display: -webkit-flex; 
+display: -ms-flexbox; 
+display: flex;   
+-webkit-box-pack: center;   
+-webkit-justify-content: center;   
+    -ms-flex-pack: center;   
+        justify-content: center;   
+-webkit-box-align: center;   
+-webkit-align-items: center;   
+    -ms-flex-align: center;   
+        align-items: center;   
+}
+
+#container{
+width: 25vw;
+height: 25vw;
+border: 1vw solid rgba(98,180,231,.8);
+-webkit-border-radius: 50%;
+        border-radius: 50%;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+
+#containerShadow{
+display: none;
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 20;
+background: rgba(98,180,231,.8);
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+color: #212121;
+}
+a{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: none;
+}
+#container:hover h1{
+    display: none;
+}
+#container:hover #containerShadow{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+#container:hover a{
+    display: block;
+}
+
+
+footer{
+width: 100%;
+height: 10vh;
+}
+
+
+/*
+МЕДИАЗАПРОСЫ МЕДИАЗАПРОСЫ
+МЕДИАЗАПРОСЫ МЕДИАЗАПРОСЫ
+МЕДИАЗАПРОСЫ МЕДИАЗАПРОСЫ
+*/
+
+
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+ h1,h2{
+    font-size: 3.6vmin;
+ }
+}
+
+
+@media screen and (max-width:1200px){
+#container {
+    width: 30vw;
+    height: 30vw;
+}
+}
+
+@media screen and (max-width:992px){
+h1, h2 {
+    font-size: 5vmin;
+}
+
+#container {
+    width: 50vw;
+    height: 50vw;
+    border: 2vw solid rgba(98,180,231,.8);
+ }
+}
+
+
+
+@media screen and (max-width:576px){
+
+h1, h2{
+    font-size: 4.5vmin;
+}
+
+#container {
+    width: 55vw;
+    height: 55vw;
+    border: 2vw solid rgba(98,180,231,.8);
+ }
+
+}
+
+
+@media screen and (orientation:landscape) and (max-height:500px){
+h1, h2 {
+    font-size: 5vmin;
+}
+
+#container {
+    width: 30vw;
+    height: 30vw;
+    border: 1vw solid rgba(98,180,231,.8);
+ }
+
+}
+
+@media screen and (max-width:260px){
+h1, h2 {
+    font-size: 5.1vmin;
+}
+}

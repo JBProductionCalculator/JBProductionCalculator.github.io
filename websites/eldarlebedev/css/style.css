@@ -1,0 +1,933 @@
+/*
+два шрифта которые использую 
+первый 100% будет использоваться
+для формы обратной связи и контактов.
+возможно буду использоапть и для всего сайта
+Второй пока что ходовой
+font-family: 'Ubuntu Mono', monospace;
+font-family: Helvetica,Arial,sans-serif;*/
+
+
+html{
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+
+body{
+  width:100%;
+  overflow: scroll;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+font-family: 'Ubuntu Mono', monospace;
+  /*font-family: Helvetica,Arial,sans-serif;*/
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 5vmin;
+  font-weight: 600;
+}
+
+
+
+
+/*
+шапка сайта*/
+header{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/*настройки видео на background*/
+#headerVideo {
+  width:100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+}
+
+#headerVideo video {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#headerImg{
+  width: 100;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+}
+#headerImg img{
+  width: 100%;  
+  height: 100%; 
+}
+
+
+/*блок с заголовком и описанием в header
+*/
+#headerContent{
+  position: absolute;
+  z-index: 20;
+    top: -0px;
+    left: -0px;
+    bottom: -0px;
+    right: -0px;
+    width: 100%;
+    height: 100%;
+    padding-left:5%;
+    padding-top: 6%;
+    color: #f3f3f3;
+}
+
+#headerContent h1{
+  font-size: 15vmin;
+  margin-bottom: 0;
+    
+}
+
+#headerContent  p{
+  font-size: 3.5vmin;
+  padding-left: 1%;
+  margin-bottom: 2%;
+}
+
+#headerContent  ul{
+  font-size: 3.5vmin;
+  padding-left: 1%;
+}
+
+#headerContent li{
+  list-style-type: none;  
+}
+#headerContent i{
+  width: 2%;
+  text-align: center;
+  margin-right: 0.2%;
+  color: #f3f3f3;
+  font-size: 3vmin;
+}
+
+
+
+
+/*
+ТЕХНОЛОГИИ КОТОРЫЕ Я 
+ИСПОЛЬЗУЮ: HTML, CSS,
+ JS, PHP, WOORDPRESS,
+FLEXBOX,GRID,BOOTSTRAP,MYSQ
+*/
+
+article#technology{
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.oneTechnology{
+height: 55vh;
+width: 25vw;
+margin-bottom: 5vh;
+overflow: hidden;
+
+}
+
+.lower{
+  margin-bottom: 0vh;
+}
+
+
+.oneTechnology img{
+  width: 20vmin;
+  height: 20vmin;
+  margin-bottom: 5%;
+  cursor: pointer;
+
+}
+
+.oneTechnology h3{
+  font-size: 4vmin;
+  font-weight:600;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+.oneTechnology p{
+  font-size: 2.5vmin;
+}
+
+/* БРАУЗЕРЫ ПОД КОТОРЫЕ Я ДЕЛАЮ САЙТЫ 
+*/
+
+article#browsers{
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.oneBrowsers img{
+  width: 20vmin;
+  height: 20vmin;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.oneBrowsers p{
+  font-size: 2.5vmin;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+
+
+
+/*МОИ РАБОТЫ МОИ РАБОТЫ МОИ РАБОТЫ МОИ РАБОТЫ */
+article#myProjects{
+  width: 100%;
+  overflow: hidden;
+  background: #212121;
+  /*font-family: Helvetica,Arial,sans-serif;*/
+}
+#myProjects h2{
+  color: #ffffff;
+  font-weight: 500;
+}
+.allProjects{
+  background: #212121;
+}
+
+.oneProject{
+background: #ffffff;
+height: 60vh;
+margin-bottom: 10vh;
+-webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+-webkit-border-top-right-radius:5px;
+        border-top-right-radius:5px;
+overflow: hidden;
+position: relative;
+
+}
+.oneProject a{
+  color: black;
+}
+.oneProject a:hover{
+  text-decoration: none;
+}
+.oneProject img{
+width: 127%;
+height: 50%;
+margin-bottom: 3%;
+cursor: pointer;
+}
+.oneProject:nth-child(2) img,
+.oneProject:nth-child(3) img
+{
+ width: 102%; 
+}
+
+.oneProject h3{
+  font-size: 3vmin;
+  font-weight:500;
+  margin: 1vmin;
+  margin-top:  0;
+  cursor: pointer;
+}
+.oneProject p{
+  font-size: 2.3vmin;
+  margin: 1vmin;
+  margin-top:  0;
+}
+
+.hiddenBlock{
+  display: none;
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(98,180,231,.8);
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hiddenBlock p{
+  color: #F7F5EE;
+  font-size: 5vmin;
+    text-transform:;
+}
+.hiddenBlock i{
+  color: #F7F5EE;
+  font-size: 4vmin;
+}
+.oneProject:hover .hiddenBlock{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*FOOTER С КОНТАКТНОЙ ФОРМОЙ*/
+
+footer{
+  width: 100%;
+  height: 90vh;
+  font-family: Helvetica,Arial,sans-serif;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.contactForm{
+  width:50%;
+  height: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+
+}
+
+form{
+  width: 85%;
+  margin-top: 3vh;
+}
+
+form input,#submit{
+  width: 100%;
+  height: 6vh;
+  margin-top: 2vh;
+  -webkit-border-radius:5px;
+          border-radius:5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 1%;
+  font-size: 2.2vmin;
+  color: grey;
+}
+
+form textarea{
+  width: 100%;
+  height: 30vh;
+  margin-top: 2vh;
+  -webkit-border-radius:5px;
+          border-radius:5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 1%;
+  padding-top: 1%;
+  font-size: 2.4vmin;
+  font-weight: 300;
+  color: grey;
+}
+
+
+#submit{
+  width:25%;
+  background: #fff;
+  cursor: pointer;
+}
+
+
+
+/*контактная информация*/
+.contactInformation {
+  margin-left: 2%;
+  width: 45%;
+  height: 80%;
+  color: #212121;
+  text-align: left;
+}
+
+.contactInformation h2{
+ text-align: left;
+  font-size: 4vmin;
+  margin-top: 5vh;
+}
+
+.contactInformation p {
+  font-size: 2.3vmin;
+  margin-top: 4vh;
+}
+
+.contactInformation li {
+  font-size: 2.3vmin;
+  margin-bottom: 2vh;
+  list-style-type: none;
+}
+
+.contactInformation span{
+  font-weight: 600;
+}
+
+.contactInformation i{
+  width: 2%;
+  text-align: center;
+  margin-right: 0.2%;
+  color: #212121;
+  font-size: 2vmin;
+  margin-right: 1%;
+}
+
+
+
+/*
+МЕДИАЗАПРОСЫ МЕДИАЗАПРОСЫ
+МЕДИАЗАПРОСЫ МЕДИАЗАПРОСЫ
+МЕДИАЗАПРОСЫ МЕДИАЗАПРОСЫ
+*/
+
+@media screen and (min-width: 1550px ){
+ .oneProject {
+    background: #ffffff;
+    height: 55vh;
+  }
+  .oneTechnology p {
+    font-size: 2.3vmin;
+}
+}
+
+
+
+
+@media screen and (max-width:1200px){
+#headerContent {
+    padding-top: 13%;
+   
+}
+#headerContent h1 {
+    font-size: 14vmin;
+  }
+
+#headerContent i {
+    margin-right: 1%;
+
+ }
+
+.oneTechnology p {
+    font-size: 2.1vmin;
+}
+.oneProject {
+    height: 50vh;
+  }
+
+ .oneTechnology img {
+    width: 15vmin;
+    height: 15vmin;
+} 
+.hiddenBlock p {
+    font-size: 4vmin;
+}
+.oneBrowsers img {
+    width: 15vmin;
+    height: 15vmin;
+}
+
+.oneBrowsers p {
+    font-size: 2.1vmin;
+ }
+
+
+}
+
+@media screen and (max-width:992px){
+header {
+    height: 80vh;
+ }
+#headerVideo {
+    width: 120%;
+ }
+ #headerVideo video {
+    width: 90%;
+}
+#headerContent {
+    padding-top: 30%;
+    padding-left: 2%;
+
+}
+
+#headerContent h1 {
+    font-size: 11vmin;
+}
+#headerContent p {
+    font-size: 3.3vmin;
+    font-weight: 400;
+}
+#headerContent ul {
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+#headerContent i {
+    margin-right: 2%;
+}
+
+.oneTechnology p {
+    font-size: 2.5vmin;
+}
+
+.oneTechnology {
+    height: 40vh;
+    margin-bottom: 3vh;
+}
+
+.oneTechnology:last-child{
+  margin-bottom: 0vh;
+}
+
+.oneBrowsers p {
+    font-size: 3vmin;
+}
+
+
+ .oneProject {
+    margin-bottom: 6vh;
+ }
+ 
+.oneProject h3 {
+    font-size: 4vmin;
+}
+.oneProject p {
+    font-size: 2.9vmin;
+  }
+
+.hiddenBlock p {
+    font-size: 6vmin;
+}
+
+.hiddenBlock i {
+    color: #F7F5EE;
+    font-size: 5vmin;
+}
+
+footer {
+    width: 100%;
+    font-family: Helvetica,Arial,sans-serif;
+    display: block;
+}
+
+.contactForm {
+    width: 100%;
+    height: 65vh;
+    display: block;
+}
+
+form {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+form textarea {
+    font-size: 3vmin;
+}
+
+form input, #submit {
+    font-size: 3vmin;
+}
+
+.contactInformation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 43vh;
+    padding-left: 9%;
+    color: #212121;
+    text-align: left;
+
+}
+.contactInformation h2 {
+    text-align: left;
+    font-size: 5vmin;
+  }
+
+.contactInformation p {
+    font-size: 3vmin;
+    margin-top: 0;
+}
+.contactInformation li {
+    font-size: 3vmin;
+  }
+
+.contactInformation i {
+    font-size: 2.9vmin;
+    margin-right: 2%;
+}
+
+}
+
+
+/*КАКОЕТО ЧИСЛО ПЛАНШЕТОВ*/
+@media screen and (max-width:768px){
+h2{
+/*  margin-top: 4%;
+  margin-bottom: 4%;
+*/  font-size: 5vmin;
+}
+header {
+    height: 100vh;
+}
+#headerContent {
+    padding-top: 37%;
+    padding-left: 1%;
+}
+#headerContent h1 {
+    font-size: 11vmin;
+}
+#headerContent p {
+    font-size: 3.2vmin;
+    font-weight: 400;
+    margin-bottom: 0%;
+}
+#headerContent ul {
+    font-size: 4.4vmin;
+    padding-left: 3%;
+}
+#headerContent i {
+    margin-right: 2%;
+    font-size: 3.8vmin;
+}
+.oneTechnology {
+    height: 35vh;
+    margin-bottom: 5vh;
+}
+
+.oneTechnology img {
+    width: 14vmin;
+    height: 14vmin;
+}
+
+.oneTechnology p {
+    font-size: 2.8vmin;
+}
+
+.oneBrowsers img {
+    width: 13vmin;
+    height: 13vmin;
+}
+
+.oneBrowsers p {
+    font-size: 2.5vmin;
+   font-weight: 900;
+}
+
+.oneProject {
+    height: 40vh;
+    margin-bottom: 8vh;
+}
+.oneProject img {
+    width: 150%;
+  }
+.oneProject h3 {
+    font-size: 3.7vmin;
+}
+.oneProject p {
+    font-size: 2.8vmin;
+}
+
+.hiddenBlock p {
+    font-size: 6vmin;
+}
+.hiddenBlock i {
+    font-size: 5.5vmin;
+}
+
+}
+
+
+/*АДАПТИВКА ДЛЯ СМАРТФОНОВ*/
+@media screen and (max-width:576px){
+header {
+    height: 80vh;
+}
+ #headerVideo video {
+    width: 85%;
+}
+h2{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 4.5vmin;
+}
+#headerContent {
+    padding-top: 40%;
+    padding-left: 2%;
+}
+#headerContent h1 {
+    font-size: 11vmin;
+}
+#headerContent p {
+    font-size: 3.3vmin;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+#headerContent ul {
+    font-size: 4vmin;
+}
+#headerContent i {
+    margin-right: 2%;
+    font-size: 3vmin;
+}
+.oneTechnology {
+    height: 35vh;
+    margin-bottom: 3vh;
+}
+.oneTechnology img {
+    width: 18vmin;
+    height: 18vmin;
+}
+.oneTechnology h3 {
+    font-size: 4.5vmin;
+ }
+.oneTechnology p {
+    font-size: 3.5vmin;
+ }
+
+  #browsers h2{
+    margin-top: 0;
+  }
+
+ .oneBrowsers img {
+    width: 17vmin;
+    height: 17vmin;
+}
+
+.oneBrowsers p {
+    font-size: 2.8vmin;
+    font-weight: 900;
+}
+
+#myProjects h2 {
+    font-size: 5.5vmin;
+}
+.oneProject {
+    height: 50vh;
+    margin-bottom: 6vh;
+}
+.oneProject img {
+    width: 145%;
+}
+.oneProject h3 {
+    font-size: 5.2vmin;
+    font-weight: 550;
+}
+.oneProject p {
+    font-size: 3.5vmin;
+}
+
+.hiddenBlock p {
+    font-size: 7vmin;
+}
+.hiddenBlock i {
+    font-size: 6vmin;
+}
+
+.contactInformation {
+    height: 42vh;
+}
+
+.contactInformation h2 {
+    margin-bottom: 3%;
+}
+.contactInformation p {
+}
+.contactInformation li {
+    font-size: 3.3vmin;
+}
+}
+
+
+/*АЛЬБОМНЫЙ РЕЖИМ СМАРТФОНОВ*/
+
+@media screen and (orientation:landscape) and (max-height:500px){
+
+h2{
+/*  margin-top: 4%;
+  margin-bottom: 4%;
+*/  font-size: 6vmin;
+}
+header {
+    height: 100vh;
+}
+#headerContent {
+    padding-top: 7%;
+    padding-left: 4%;
+}
+#headerContent h1 {
+    font-size: 14vmin;
+}
+#headerContent p {
+    font-size: 4.5vmin;
+    font-weight: 400;
+    margin-bottom: 0%;
+}
+#headerContent ul {
+    font-size: 4.5vmin;
+    padding-left: 1%;
+}
+#headerContent i {
+    margin-right: 1%;
+    font-size: 3.8vmin;
+}
+.oneTechnology {
+    height: 45vh;
+    margin-bottom: 5vh;
+}
+.oneTechnology p {
+    font-size: 2.8vmin;
+}
+.oneBrowsers p {
+    font-size: 2.5vmin;
+   font-weight: 900;
+}
+
+.oneProject {
+    height: 80vh;
+    margin-bottom: 8vh;
+}
+.oneProject h3 {
+    font-size: 5vmin;
+}
+.oneProject p {
+    font-size: 3.5vmin;
+}
+
+.hiddenBlock p {
+    font-size: 6vmin;
+}
+.hiddenBlock i {
+    font-size: 5.5vmin;
+}
+.contactForm {
+    height: 90vh;
+}
+form {
+    width: 85%;
+    margin-top: 4vh
+}
+
+form input, #submit {
+    height: 10vh;
+}
+
+form textarea {
+    height: 35vh
+}
+
+form input, #submit {
+    font-size: 3.3vmin;
+}
+form textarea {
+    font-size: 3.3vmin;
+}
+.contactInformation h2 {
+  margin-bottom: 2%;
+}
+.contactInformation p {
+    font-size: 3.5vmin;
+    margin-top: 0;
+}
+.contactInformation ul {
+    font-size: 3.5vmin;
+    margin-top: 0;
+}
+
+.contactInformation {
+    width: 90%;
+    height: 63vh
+}
+
+}
+
+
+
+
+
+@media screen and (max-width:260px){
+#headerContent {
+    padding-top: 27%;
+}
+
+.oneTechnology {
+    height: 45vh;
+    margin-bottom: 5vh; 
+}
+.oneTechnology:last-child {
+    margin-bottom: 3vh;
+}
+.oneProject {
+    margin-bottom: 6vh;
+    height: 65vh;
+}
+.oneProject p {
+    font-size: 3.7vmin;
+}
+}
+
+
+
+
