@@ -1,0 +1,35 @@
+section.standart_header{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.standart_header img{
+	position: absolute;
+	left: var(--indent);
+	transform: rotate(180deg);
+}
+
+section.standartPage{
+	background: var(--static_black);
+	padding:  calc(var(--indent) * 3)  calc(var(--indent) * 5);
+	text-align: center;
+}
+
+section.standartPage > h4{
+	text-transform: none;
+}
+
+.standartPage_mainPicture{
+	margin-bottom: calc(var(--indent) * 2);
+}
+
+.standartPage_mainPicture img{
+	width: 100%;
+}
+
+.standartPage p{
+	text-align: left;	
+	margin: var(--indent) 0;
+}

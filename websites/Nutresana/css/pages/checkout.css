@@ -1,0 +1,132 @@
+.checkout_body{
+	overflow-y: hidden;
+	position: relative;
+}
+
+.checkout{
+	display: flex;
+	position: relative;
+	z-index: 300;
+}
+
+.checkout_cart{
+	flex:1 0 30vw;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	padding-top: 25vh;
+	/*height: 100%;*/
+
+	background: var(--checkout_black);
+}
+
+.checkout_cart .cart_products{
+	height: 100vh;
+
+}
+
+.checkout_main{
+	flex: 1 0 68vw;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	padding: 6vh calc(var(--indent) * 7) 0 calc(var(--indent) * 2);
+}
+
+ .checkout_main h2, .checkout_contact h3, .checkout_delivery h3{
+	text-align: left;
+}
+
+.checkout_contact h3, .checkout_delivery h3{
+	margin: 3vw 0;
+}
+
+.checkout_delivery h3{
+	margin-top: 4vw;
+}
+
+.checkout_form-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.checkout_form input{
+    border: none;
+    color: var(--white);
+    background: none;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 1vw;
+    margin-bottom: 3vw;
+    margin-right: 1vw;
+    font-size: var(--text);
+}
+
+.checkout_contact .checkout_form-row:last-child input{
+	margin-bottom: 0;
+}
+
+.checkout_form-row:last-child{
+	grid-template-columns: 1fr;
+}
+
+.checkout_delivery .checkout_form-row:first-child{
+	grid-template-columns: 6fr 2fr;
+}
+
+.checkout_delivery .checkout_form-row:nth-child(2){
+	grid-template-columns: 2fr  6fr;
+}
+
+.checkout_payment h3, .checkout_payment h4{
+	text-align: left;
+}
+
+.checkout_payment h4{
+	margin-bottom: 0;
+	color: rgba(255,255,255,.5);
+
+}
+
+.payment_systems{
+	display: flex;
+}
+
+.payment_systems ul{
+	display: flex;
+	padding: .2vw;
+	background: var(--white);
+	border-radius: 1vw;
+}
+
+.payment_systems li{
+	padding: 1vw;
+	background: var(-white);
+	color: var(--payment_green);
+	border-radius: 1vw;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.payment_systems li.payment_systems-active{
+	background: var(--static_black);
+	color: var(--white);
+
+}
+
+.checkout_payment h3{
+	margin-top: 0;
+}
+
+.payment_button{
+	display: flex;
+	margin: calc(var(--indent) * 1.5) 0;
+}
+
+
+.payment_button-price{
+	margin-left: var(--indent);
+}
+
+.payment_button button{
+	background: rgba(0,0,0,0);
+	border:none	;
+}

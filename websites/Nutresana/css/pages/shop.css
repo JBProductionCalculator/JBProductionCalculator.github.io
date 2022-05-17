@@ -1,0 +1,136 @@
+section.shopHeader{
+	background-image: url(../../img/footer_background.png);
+	padding: calc(var(--indent) * 6) 0 calc(var(--indent) * 3) 0;
+	position: relative;
+}
+
+
+.shopHeader_slider-slide{
+	display: flex;
+}
+
+.shopHeader_slider-slide > div{
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+.shopSlider_content{
+	width: 46vw;
+}
+
+.shopSlider_content{
+	padding-top: calc(var(--indent) * 1.5);
+	padding-left: calc(var(--indent) * 4);
+
+}
+
+section.shopHeader .shopSlider_content h2{
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: calc(var(--indent) * 4);
+}
+
+.shopSlider_picture{
+	width: 27vw;
+	display: flex;
+	justify-content: center;
+}
+
+.shopSlider_content-header{
+	display: flex;
+	align-items: center;
+}
+
+.shopSlider_content-header p{
+	text-transform: uppercase;
+	font-size: calc(var(--text) - .2vw);
+	color: var(--white);
+}
+
+.shopSlider_content-header:before{
+	content: "";
+	width: 5vw;
+	height: 1px;
+	background: var(--white);
+	margin-right: 1vw;
+}
+
+.shopSlider_buttons{
+	width: 27vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 2vw;
+}
+
+.shopSlider_buttons{
+	text-align: center;
+	font-size: var(--h2);
+	color: var(--white)
+}
+
+.shopSlider_buttons span:first-child:before,
+.shopSlider_buttons span:last-child:before{
+	content: '0';
+}
+
+.shopSlider_buttons span:last-child{
+	font-size: var(--h4);
+}
+
+.shopSlider_buttons > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.shopHeader_navigation{
+	margin-bottom: 1vw;
+}
+
+.shopHeader_navigation-buttons{
+	display: flex;
+	align-items: center;
+}
+
+.shopHeader_prev, .shopHeader_next{
+    cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.shopHeader_prev img, .shopHeader_next img{
+	width: 3vw;
+}
+
+.shopHeader_prev {
+    transform: rotate(-180deg);
+    margin-right: 2vw;
+}
+
+.shopHeader_number{
+	margin-bottom: 6vw;
+}
+
+
+section.shop{
+	/*padding: calc(var(--indent) * 3);*/
+	padding-top: 0;
+}
+
+.shop_title{
+	margin: calc(var(--indent) * 4) 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shop_title h3{
+	margin: 0 1.5vw;
+}
+
+.shop_title img{
+	transform: rotate(90deg);
+}
+
