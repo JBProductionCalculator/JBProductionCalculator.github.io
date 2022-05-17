@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Принты на вещи</title>
+	
+	<link rel="stylesheet" type="text/css" href="libs/jqueryUI/jquery-ui.structure.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<section class="wrapper">
+<section class="choice">
+	<header class="choice_header">
+		<h3>На что будешь наносить принт?</h3>
+	</header>
+	<section class="choice_showcase">
+		<div class="choice_showcase-item"><img src="images/outerwear/men_hoody-white.jpg" alt=""></div>
+		<div class="choice_showcase-item"><img src="images/outerwear/men_T-shirt-white.jpg" alt=""></div>
+		<div class="choice_showcase-item"><img src="images/outerwear/men_pollo-white.jpg" alt=""></div>
+		<div class="choice_showcase-item"><img src="images/outerwear/men_hoody-black.jpg" alt=""></div>
+		<div class="choice_showcase-item"><img src="images/outerwear/men_T-shirt-black.png" alt=""></div>
+		<div class="choice_showcase-item"><img src="images/outerwear/men_pollo-black.png" alt=""></div>
+	</section>
+</section>
+<main class="main">
+	<header class="main_header">
+		<h1 class="main_header-title">конструктор принов</h1>
+	</header>
+	<article class="editor">
+		<aside class="editor_functions">
+			<ul>
+				<li class="functions_text">
+					<h3>Текст</h3>
+					<ul>
+						<li><textarea class="button_choice"></textarea></li>
+						<li>
+							<h5>цвет</h5>
+							<input type="color"></li>
+						<li>
+							<h5>размер</h5>
+							<select id="size-text">
+								<option>6px</option>							
+								<option>8px</option>							
+								<option>10px</option>							
+								<option>12px</option>							
+								<option>14px</option>							
+								<option>18px</option>							
+								<option>20px</option>							
+								<option>22px</option>							
+								<option>24px</option>							
+								<option>26px</option>							
+								<option>28px</option>							
+								<option>30px</option>							
+							</select>
+						</li>
+						<li id="text_case">
+							<h5>Регистр</h5>
+							<p> <input type="radio" name="register" data-case='uppercase'>ВЕРХНИЙ</p>
+							<p>	<input type="radio" name="register" data-case='lowercase'>нижний</p> 
+							<p>	<input type="radio" name="register" data-case='capitalize'>Все С Заглавной</p> 
+						</li>
+						<li>
+							<h5>шрифт</h5>
+							<select id="font-text">
+								<option>SegoeUIBold</option>
+								<option>SegoeUIRegular</option>
+								<option>SegoeUISemiBold</option>
+								<option>SegoeUILight</option>
+								<option>BeeThree</option>
+								<option>ChocBorissov</option>
+								<option>CrackManCYR</option>
+								<option>MKARCADECAPS</option>
+								<option>ALoveOfThunder</option>
+								<option>KashimaRUSbyCop</option>
+								<option>AnotherCastle3</option>
+								<option>ROBO</option>
+								<option>MythBustersNew</option>
+							</select>
+						</li>
+					</ul>
+				</li>
+				<li class="functions_picture">
+					<h3>Картинка</h3>
+					<ul>
+						<li><input type="file"  class="button_choice"></li>
+					</ul>
+				</li>
+				<li class="functions_emoji button_choice">
+					<h3>Эмодзи</h3>
+					<ul class="all_emoji">
+						<li class="all_emoji-item"><img src="images/emoji/1.png" alt=""></li>						
+						<li class="all_emoji-item"><img src="images/emoji/2.png" alt=""></li>						
+						<li class="all_emoji-item"><img src="images/emoji/3.png" alt=""></li>
+						<li class="all_emoji-item"><img src="images/emoji/4.png" alt=""></li>
+						<li class="all_emoji-item"><img src="images/emoji/5.png" alt=""></li>
+						<li class="all_emoji-item"><img src="images/emoji/6.png" alt=""></li>
+										
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<section class="editor_execution">
+				<header class="editor_execution-menu">
+					<ul>
+						<li class="all_outerwear">
+							<p>все</p>
+							<ul class="all_outerwear-list off">
+								<li data-outerwear='images/outerwear/men_hoody-black.png'><img src="images/outerwear/men_hoody-black.png" alt=""></li>
+								<li data-outerwear='images/outerwear/men_hoody-white.jpg'><img src="images/outerwear/men_hoody-white.jpg" alt=""></li>
+								<li data-outerwear='images/outerwear/men_pollo-black.png'><img src="images/outerwear/men_pollo-black.png" alt=""></li>
+								<li data-outerwear='images/outerwear/men_pollo-white.jpg'><img src="images/outerwear/men_pollo-white.jpg" alt=""></li>
+								<li data-outerwear='images/outerwear/men_T-shirt-black.png'><img src="images/outerwear/men_T-shirt-black.png" alt=""></li>
+								<li data-outerwear='images/outerwear/men_T-shirt-white.jpg'><img src="images/outerwear/men_T-shirt-white.jpg" alt=""></li>
+							</ul>
+
+						</li>
+						<li class="outerwear" data-outerwear='images/outerwear/men_T-shirt-white.jpg'>футболка</li>
+						<li class="outerwear" data-outerwear='images/outerwear/men_pollo-white.jpg'>поло</li>
+						<li class="outerwear" data-outerwear='images/outerwear/men_hoody-white.jpg'>худи</li>
+					</ul>
+				</header>		
+				<section class="editor_execution-window">
+					<!-- <iframe src="drag-drop.html" name="example" id="iframe"></iframe> -->			
+					<div class="picture_Tshirts">
+						<img src="images/outerwear/men_hoody-black.png" alt="" >						
+					</div>
+
+					<div class="window_text  box_choice">
+						<div class="window_text-item break-all  " draggable='true'></div>
+					</div>
+					<div class="window_image box_choice">
+						<div class="window_image-item  " draggable='true'></div>
+					</div>
+					<div class="window_emoji box_choice">
+						<div class="window_emoji-item  " draggable='true'></div>
+					</div>
+				</section>
+		</section>
+	</article> 		
+</main>	
+</section>
+
+<div class="stub">
+	<p>ОТКРОЙТЕ САЙТ С УСТРОЙСТВА С БОЛЬШИМ РАЗРЕШЕНИЕМ ЭКРАНА</p>
+</div>
+ 
+
+
+<script type="text/javascript" src="libs/jqueryUI/jquery.js"></script>
+<script type="text/javascript" src="libs/jqueryUI/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+</html>

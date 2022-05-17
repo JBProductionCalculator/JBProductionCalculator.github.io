@@ -1,0 +1,32 @@
+// Сброс стилей браузера
+body,
+html,
+ul,
+ol,{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+li{
+	list-style: none;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+input,
+button,
+select,
+option{
+	outline: none;
+	border:none;
+}
+
+textarea{
+	outline: none;
+}

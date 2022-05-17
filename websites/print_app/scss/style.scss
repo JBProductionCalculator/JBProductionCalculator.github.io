@@ -1,0 +1,316 @@
+//Стили первого окна
+@import 'connection';
+
+body{
+	position: relative;
+}
+
+
+//Cтили редактора
+.main_header{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: center;
+	padding: 2vh 5vw;
+	box-sizing: border-box;	
+	width: 100%;
+	background: $black;
+		
+	&-logo{
+		cursor: pointer;
+		img{
+			height: 50px;
+
+		}
+	}
+
+	&-menu{
+			ul{
+				display: flex;
+				justify-content: flex-end;
+				color: $white;
+
+				li{
+					padding:10px;
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+			}		
+	}
+
+}
+
+
+
+
+.editor{
+	display:grid;
+	grid-template-columns: 4fr 15fr;
+	padding: 0 2vw;
+	margin-top: 5vh;
+	overflow:hidden;
+
+	box-sizing:border-box;
+		&_functions{
+			> ul{
+				> li{
+					padding: 0 1vw;
+					border: 1px solid black;
+					border-bottom:none;
+				    cursor: pointer;
+
+					&:last-child{
+						border-bottom: 1px solid black;
+					}
+
+					h3{
+						cursor: pointer;
+						transition: all .3s ease;
+
+						&:hover{
+							color:$blue;
+							transition: all .3s ease;
+						}
+					}
+
+					> ul{
+						// display: none;
+					}
+				}
+
+				.functions_text, .functions_picture{
+					input,select{
+						margin-bottom: 3vh;
+						height: 30px;
+					}	
+
+					select{
+						width:100%;
+						border: 1px solid black;
+						font{
+							size: 15px;
+							weight:700;
+						}
+					}
+
+					textarea{
+						border:1px solid black;
+						width:98%;
+						max-width: 98%;
+						height: 8vh;
+						margin-bottom: 2vh;
+
+					}
+
+					
+				}
+
+				.functions_emoji{
+					position: relative;
+					.all_emoji{
+						    position: absolute;
+						    z-index: 400;
+						    width: 250px;
+						    top: -1px;
+						    right: -250px;
+						    display: flex;
+						    flex-wrap: wrap;
+						    box-sizing:border-box;
+						    border:1px solid black;
+							display:none;
+
+
+					    &-item{
+							flex: 1 1 30%;
+							overflow:hidden;
+
+							img{
+								width: 100%;
+							}
+					    }
+					}
+				}
+
+				
+			}
+		}
+
+		&_execution{
+			display:flex;
+			flex-direction: column;
+			align-items:center;
+			&-menu{
+				display: flex;
+				justify-content:center;
+				> ul{
+					display: flex;	
+				
+
+					>li{
+						border:1px solid black;
+						padding: 2vh 3vw;
+						margin-right: 1vw;
+						cursor: pointer;
+						position:relative;
+						z-index:999;
+
+							p{
+								margin:0;
+							}
+
+							ul.all_outerwear-list{
+								position:absolute;
+								left: 0;
+								top: 50px;
+								width: 30vw;
+								// display:flex;
+								flex-wrap:wrap;
+								// display:none;
+
+								li{
+									flex: 0 1 35%;
+
+
+									img{
+										width:100%;
+									}
+								}
+
+							}
+					}
+					
+				}
+			}
+
+			&-window{
+				position: relative;
+				border:1px solid red;
+				overflow:hidden;
+				margin-top: 5vh;
+				width: 500px;
+				min-height: 400px;
+				
+				iframe{
+					min-height: 400px;
+				}
+
+				.picture_Tshirts{
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
+
+
+				.window_text, .window_image, .window_emoji{
+					display:none;
+					position:absolute;
+					z-index: 100;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height:100%;
+				}
+
+				.window_text{
+					overflow:hidden;
+					word-wrap: break-word;
+					color:$black;
+					border:30px solid orange;
+
+					&-item{
+						word-break: break-all;
+						width:230px;
+					}
+
+				}
+
+				.window_image{			
+					border:1px solid gray;
+					z-index: 200;
+					border:20px solid red;
+						&-item{
+							position: absolute;	
+							background-size: 100%;
+						    background-repeat: no-repeat; 
+						    background-size:100%;
+						    width: 150px;
+						    height: 150px;
+						    cursor: pointer;
+						 
+
+						}		
+				}
+
+				.window_emoji{
+					z-index: 300;
+					border:10px solid green;
+					
+					&-item{
+						position: absolute;	
+						z-index: 850;
+						background-size: 100%;
+					    background-repeat: no-repeat; 
+					    background-size:100%;
+					    width: 100px;
+					    height: 100px;
+					    cursor: pointer;
+					
+					}
+
+
+
+				}
+
+			}
+		}
+}
+
+
+
+.emojiDrop {
+    position: absolute;	
+    z-index: 600;
+	background-size: 100%;
+    background-repeat: no-repeat; 
+    background-size:100%;
+    // width: 150px;
+    // height: 150px;
+    cursor: pointer;
+}
+
+
+////////////////////////////////////////////////////////////
+
+.parent {
+  width: 100%;
+  height: 1000px;
+  background: red;
+  box-sizing: border-box;
+  overflow: hidden;
+   }
+
+.drag_box{
+  width: 330px;
+  height: 330px;  
+  margin:  100px;
+  background: black;
+   position: relative; 
+}
+
+.draggable {
+  width: 150px;
+  height: 150px;
+  background: green;
+  cursor: pointer;
+  position: absolute;
+   }
+
+.dropzone {
+	width: 50%;
+  padding: 10px;
+  margin-left: 300px;
+  background: grey; 
+}
+
+

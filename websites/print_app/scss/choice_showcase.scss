@@ -1,0 +1,38 @@
+.choice{
+	&_header{
+		text-align: center;
+		font-size: 2vw ;
+	}
+
+	&_showcase {
+	     width: 100%;
+	     display: grid;
+	     grid-template-columns: repeat(3,1fr);
+	     grid-auto-rows: 500px;
+	     grid-row-gap: 10vh;
+	     justify-content: center;
+
+	     &-item {
+			display:flex;
+			justify-content:center;
+			align-items: center;
+			
+			
+
+
+	     		img{
+		     		width: auto;
+		     		height: 500px;
+		     		cursor: pointer;
+
+		     		&:hover{
+						border: 1px solid  $black;
+					} 	
+		     }
+	     }
+
+	   
+	}
+}
+
+
