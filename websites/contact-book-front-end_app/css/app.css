@@ -1,0 +1,149 @@
+body{
+    padding-bottom: 100px;
+}
+
+input,button{
+    outline: none;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-grid{
+    display: grid;
+}
+
+
+.notebook {
+    margin: 0 auto;
+    width: 70vw;
+    overflow: hidden;
+}
+
+header{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ 
+.contact{
+    grid-template-areas: "picture initials buttons"
+                         "picture number buttons";
+                         grid-template-rows:40px 1fr;
+                         grid-template-columns: 80px 1fr;
+                        
+    margin-bottom: 30px;                    
+}
+
+.contact-picture{
+    grid-area: picture ;
+}
+
+.contact-picture img{
+    width: 100%;
+}
+
+.contact-initials{
+    grid-area: initials;
+    display: flex;
+    align-items: center;
+}
+
+.contact-initials > div, .contact-initials > input{
+    margin-right: 5px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.contact-initials > input, .change-number {
+    width: 200px;
+    font-size: 17px;
+    color: #000000;
+    padding: 2px 5px;
+}
+.contact-number{
+    grid-area:number ;    
+}
+
+.add-info{
+    border: 1px solid #000000;
+}
+
+
+
+.contact-buttons{
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+}
+
+.contact-buttons > div{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 10px 5px;
+    border: 1px solid #000000;
+    text-transform: uppercase   ;
+}
+
+
+
+.add-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.add-contact button{
+    border: 1px solid #000000;
+    background: #ffffff;
+    padding:20px 70px;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+/* Страница контакта */
+.post{
+    width: 60vw;
+    margin:0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "p-picture p-initials"
+                         "p-picture p-number";
+}
+
+.post-picture{
+    grid-area: p-picture;
+
+}
+
+.post-picture img{
+    width: 100%;
+}
+
+.post-initials{
+    grid-area: p-initials;
+    display: flex;
+    align-items: center;
+}
+
+.post-initials p{
+    margin-right:10px;
+    font-size: 50px;
+}
+
+.post-number{
+    grid-area: p-number;
+    font-size: 25px;
+}

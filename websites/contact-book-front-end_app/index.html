@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записная книжка</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="notebook">
+        <header>
+            Записная книга
+        </header>
+        <section class="container">
+            <div class="contact d-none">
+                <div class="contact-picture"><a href="contact.html"><img src="image/1.png"></a></div>
+                <div class="contact-initials">
+                    <div class="contact-initials_name d-none"></div>
+                    <input type="text" placeholder="Имя" class="add-info change-name ">
+
+                    <div class="contact-initials_surname d-none"></div>
+                    <input type="text" placeholder="Фамилия" class="add-info change-surname  ">
+                    
+                </div>   
+                <div class="contact-number">
+                    <div class=" d-none"></div> 
+                    <input type="text" placeholder="Номер" class="add-info change-number ">
+                </div>
+
+                <div class="contact-buttons">
+                    <div class="contact-buttons_change">Сохранить</div>
+                    <div class="contact-buttons_delete">Удалить</div>          
+                </div>
+            </div>    
+                           
+        </section>
+        <div class="add-contact">
+            <button>добавить контакт</button>
+        </div>  
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
