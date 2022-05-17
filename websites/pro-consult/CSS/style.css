@@ -1,0 +1,165 @@
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.main_title {
+  text-transform: uppercase;
+  color: #60449e;
+  text-align: center;
+  font-weight: 100;
+  font-size: 35px; }
+
+.secondary_title {
+  text-transform: uppercase;
+  color: #60449e;
+  text-align: center;
+  font-weight: 100;
+  font-size: 23px; }
+
+.background_image-one {
+  position: fixed;
+  z-index: -10;
+  width: 100%; }
+
+.header {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 3vh 15vw; }
+  .header_logo {
+    display: flex;
+    align-items: center; }
+    .header_logo span {
+      text-transform: uppercase;
+      font-size: 25px; }
+      .header_logo span:first-child {
+        color: #fff;
+        background: #60449e;
+        margin-right: 8px;
+        padding: 3px 5px; }
+  .header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .header_menu li {
+      margin-right: 20px;
+      font-size: 17px;
+      text-transform: uppercase; }
+
+.profit, .request {
+  padding: 20vh 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .profit_box, .request_box {
+    background: rgba(96, 68, 158, 0.9);
+    padding: 3vw 7vw 0 7vw;
+    text-align: center; }
+    .profit_box h1, .request_box h1 {
+      color: #fff; }
+    .profit_box p, .request_box p {
+      color: #fff;
+      font-size: 20px; }
+    .profit_box-arrow {
+      margin-top: 5vw; }
+      .profit_box-arrow img {
+        margin-bottom: -4px; }
+
+.services {
+  padding: 5vw 20vw;
+  background: #fff;
+  position: relative; }
+  .services_box {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 20px; }
+    .services_box-item {
+      border: 3px solid #60449e;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3vw 2vw;
+      text-align: center; }
+      .services_box-item h5 {
+        margin: 1vw 0;
+        margin-top: 1.3vw; }
+      .services_box-item p {
+        margin: 0; }
+      .services_box-item a {
+        margin-top: 15px;
+        color: #60449e;
+        font-style: italic;
+        text-decoration: underline; }
+
+.trust {
+  background-image: url(../img/2.jpg);
+  background-position-x: -20vw;
+  padding: 5vw 25vw; }
+  .trust h2 {
+    text-align: left; }
+  .trust_box-item {
+    margin-bottom: 3vw; }
+    .trust_box-item img {
+      float: left;
+      margin-right: 20px; }
+    .trust_box-item h5 {
+      text-align: left;
+      margin-top: 5px;
+      margin-bottom: 30px; }
+    .trust_box-item p {
+      font-size: 18px;
+      max-width: 40%; }
+
+.request h2 {
+  margin-bottom: 0; }
+.request p {
+  color: #60449e;
+  font-size: 20px; }
+.request_box {
+  background: rgba(255, 255, 255, 0.6);
+  padding-bottom: 7vh; }
+  .request_box form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; }
+    .request_box form input {
+      height: 5vh;
+      margin-bottom: 7px;
+      padding-left: 10px;
+      font-size: 14px;
+      border: none;
+      outline: none; }
+    .request_box form button {
+      height: 7vh;
+      background: #60449e;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 100;
+      margin-top: 10px; }
+  .request_box .request_box-link {
+    display: block;
+    color: #60449e;
+    text-decoration: underline;
+    margin-top: 1vh;
+    font-size: 16px; }
+
+/*# sourceMappingURL=style.css.map */

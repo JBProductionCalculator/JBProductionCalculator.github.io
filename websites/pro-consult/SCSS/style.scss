@@ -1,0 +1,274 @@
+$main_color:#60449e;
+$main_background:#ffffff;
+ 
+html,
+body,
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.main_title{
+	text-transform: uppercase;
+	color: $main_color;
+	text-align: center;
+
+	font: {
+		weight: 100;
+		size: 35px;
+	}
+
+}
+
+.secondary_title{
+	text-transform: uppercase;
+	color: $main_color;
+	text-align: center;
+
+	font: {
+		weight: 100;
+		size: 23px;
+	}
+
+}
+
+
+// --------------------------------------------------
+
+ .background_image-one{
+	position:fixed;
+	z-index: -10;
+	width: 100%;
+}
+
+
+.header{
+	background: $main_background;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 3vh 15vw;
+
+	&_logo{
+		display: flex;
+		align-items: center;
+
+		& span{
+			text-transform: uppercase;
+			font-size: 25px;
+
+			&:first-child{
+				color: #fff;
+				background: $main_color;
+				margin-right: 8px;
+				padding: 3px 5px;
+			}
+		}
+	}
+
+
+	&_menu{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		& li{
+			margin-right: 20px;
+			font-size: 17px;
+			text-transform: uppercase;
+
+		}
+
+	}
+}
+
+
+
+.profit{
+	padding: 20vh 0;
+	background: rgba(0,0,0,0);
+	display: flex;
+	justify-content: center;
+	position:relative;
+
+
+
+	&_box{
+		background: rgba(96,68,158,.9);
+		padding: 3vw 7vw 0 7vw;
+		text-align: center;	
+
+		& h1{
+			color: #fff;
+		}
+
+		& p{
+			color: #fff;
+			font-size: 20px;
+		}
+
+		&-arrow{
+			margin-top: 5vw;
+
+			& img{
+				margin-bottom: -4px;
+			}
+		}
+	}
+}
+
+
+
+
+.services{
+	padding: 5vw 20vw;
+	background:#fff;
+	position: relative;
+
+
+	
+	&_box{
+		margin-top: 4vw;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 0 20px;
+
+		&-item{
+			border: 3px solid $main_color;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 3vw 2vw;
+			text-align: center;
+
+			& h5{
+				margin: 1vw 0;
+				margin-top: 1.3vw;
+			}
+
+			& p{
+				margin: 0;
+			}
+
+			& a{
+				margin-top: 15px;
+				color: $main_color;
+				font-style: italic;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+
+
+.trust{
+	background-image: url(../img/2.jpg);
+	    background-position-x: -20vw;
+	padding: 5vw 25vw;
+
+
+	& h2{
+		text-align: left;
+	}
+
+	&_box{
+
+			&-item{
+				margin-bottom: 3vw;
+
+			& img{
+				float: left;
+				margin-right: 20px;
+			}
+
+			& h5{
+				text-align: left;
+				margin-top: 5px;
+				margin-bottom: 30px;
+			}
+
+			& p{
+				font-size: 18px;
+				max-width: 40%;
+			}
+		}
+	}
+
+}
+
+
+.request{
+	@extend .profit;
+	
+
+	& h2{
+		margin-bottom: 0;
+	}
+
+	& p{
+		color:$main_color;
+		font-size: 20px;
+	}
+
+
+	&_box{
+		@extend .profit_box;
+	background:rgba(255,255,255,.6);
+	padding-bottom: 7vh;
+
+
+		& form{
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+
+			& input{
+				height: 5vh;
+				margin-bottom: 7px;
+				padding-left: 10px;
+				font-size: 14px;
+				border:none;
+				outline: none;
+			
+			}
+
+			& button{
+				height: 7vh;
+				background:$main_color;
+				color:#fff;
+				display: flex;
+				justify-content: center;
+				align-items:center;
+				border:none;
+				outline: none;
+				text-transform: uppercase;
+				font-size: 20px;
+				font-weight:100;
+				margin-top: 10px;
+			}
+
+		}
+		
+
+			& .request_box-link{
+				display: block;
+				color:$main_color;
+				text-decoration:underline;
+				margin-top: 1vh;
+				font-size:16px;
+				// margin-bottom: 5vh;
+			}
+	}
+}
