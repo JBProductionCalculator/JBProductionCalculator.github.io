@@ -1,0 +1,36 @@
+body {
+	max-width: 1920px;
+	overflow-x: hidden;
+	background-color: #761a4d;
+}
+img {
+	width: 102%;
+	margin-left: -1%;
+	margin-top: -1%;
+}
+#p_prldr{
+    display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: #1c1a1a;
+  z-index: 1000;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+  margin: auto;
+width: 45%;
+height: 10%;
+position: absolute;
+}
+.contpre img{
+  width: 100%;
+}

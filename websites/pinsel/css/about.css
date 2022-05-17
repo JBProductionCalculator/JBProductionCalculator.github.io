@@ -1,0 +1,28 @@
+body {
+	background-color: #1c1a1a;
+}
+.wrap{
+	width: 80%;
+	height: 100vh;
+	background-color: yellow;
+	margin: auto;
+}
+.firstblock, .secondblock, .thrihtblock
+.frontp{
+	width: 50%;
+	height: 2%;
+	background-color: black;
+}
+.backp {
+	display: inline-block;
+	margin-top: 25%;
+    margin-left: 10%;
+    width: 50%;
+    font-size: 1.3em;
+}
+.first_block img{
+	justify-content:flex-end;
+}
+.sedcond_block{
+	background-color: green;
+}

@@ -1,0 +1,60 @@
+@font-face {
+font-family: RobotoBk; 
+    src: url(../fonts/Robotobk.ttf);
+}
+@font-face {
+font-family: RobotoLight; 
+    src: url(../fonts/RobotoLight/RobotoLight.ttf);
+}
+@font-face {
+font-family: RobotoBold; 
+    src: url(../fonts/RobotoBold/RobotoBold.ttf);
+}
+@font-face {
+font-family: RobotoMedium; 
+    src: url(../fonts/RobotoMedium/RobotoMedium.ttf);
+}
+@font-face {
+font-family: RobotoRegular; 
+    src: url(../fonts/RobotoRegular/RobotoRegular.ttf);
+}
+@font-face {
+font-family: RobotoTh; 
+    src: url(../fonts/RobotoTh.ttf);
+}
+@font-face {
+font-family: RalewayBlack; 
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+font-family: UniSansThin; 
+    src: url(../fonts/UniSansThin.ttf);s
+}
+@font-face {
+font-family: UniSansHeavy;
+    src: url(../fonts/UniSansHeavy.ttf);
+}
+/*RELWAY*/
+@font-face {
+font-family: Raleway-Bold; 
+    src: url(../fonts/Releway/Raleway-Bold.ttf);
+}
+@font-face {
+font-family: Raleway-Black; 
+    src: url(../fonts/Releway/Raleway-Black.ttf);
+}
+@font-face {
+font-family: Exo2Bold; 
+    src: url(../fonts/Exo/Exo2Bold.ttf);
+}
+@font-face {
+font-family: Exo2Regular; 
+    src: url(../fonts/Exo/Exo2Regular.ttf);
+}
+@font-face {
+font-family: RalewayThin; 
+    src: url(../fonts/Releway/RalewayThin.ttf);
+}
+.pink{
+    color: #ff557d;
+}

@@ -1,0 +1,863 @@
+
+body{
+	/*background-color: #1c1a1a;*/
+	margin: 0 ;
+	padding: 0;
+	position: absolute;
+    background-color: #1c1a1a ;
+  
+}
+.boss{
+	width: 80%;
+	margin-left: 10%;
+   
+}
+menu{
+	width: 100%;
+	height: 15vh;
+	background-color: #1c1a1a ;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	height:100%;
+	margin-bottom: 15vh;
+}
+
+header section{
+background-color: red;
+height: 70vh;
+margin-top: 10vh;
+
+}
+header section:nth-child(1){
+	margin-top: 0;
+}
+
+.block-img{
+width: 50%;
+height: 100%;
+background-color: #1c1a1a ;
+border: 2px solid white;
+float: right;
+display: flex;
+align-items: center; 
+}
+
+.block-img img{
+width: 100%;
+height: 100%;
+}
+
+
+.block-paragraph{
+	background-color: #1c1a1a ;
+	height: 100%;
+	font-size: 1.6vw;
+	color: white;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.block-paragraph .dot{
+	position: absolute;
+	top: 0;
+	width: 85%;
+	height: 60%;
+}
+.block-paragraph .dot img{
+	width: 100%;
+	height: 100%;
+}
+
+.studios{
+	position: absolute;
+	top: 5%;
+	color: white;
+    width: 100%;
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+.studios span{
+	width: 55%;
+	font-family: Raleway-Bold; 
+	font-size: 2.5vw;
+	letter-spacing: 0.9vw;
+	margin-left: 2%;
+
+
+}
+.studios hr{
+	display: inline-block;
+	width: 45%;
+	margin-left:0;
+}
+
+/*средний блок*/
+article{
+	width: 100%;
+	height: 80vh;
+	background-color: gray;
+	display: flex;
+	position: relative;
+}
+
+article section:nth-child(1){
+	width: 25%;
+	font-size: 3vw;
+	font-family: Raleway-Bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 3;	
+}
+article section:nth-child(2){
+	width: 50%;
+	font-family: RobotoRegular; 
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	z-index: 3;
+
+
+}
+article section h2{
+font-size: 2.3vw;
+letter-spacing: 1vw;
+margin: 15% 0 10% 0;
+}
+
+.command {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    top: -3%;
+    right: -9%;
+}
+.command span{
+font-family: Raleway-Bold;
+font-size: 2.5vw;
+letter-spacing: 1vw;
+color: white;
+margin-right: 0;
+}
+.command hr{
+	width: 40%;
+	height: 0.1vh;
+	display: inline-block;
+	margin-left: 0;
+   align-self: center;
+   background-color: white;
+}
+
+.toots {
+    position: absolute;
+    z-index: 2;
+    top: -10%;
+    right: -9%;
+    width: 45%;
+    height: 70%;
+}
+
+/* блок Что мы создали*/
+.haveСreated{
+	width: 100%;
+	height: 100vh;
+	margin-top: 20vh;
+
+}
+
+.haveСreated .caption{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	color: white;
+	font-family: Raleway-Bold;
+	font-size: 2.5vw;
+	letter-spacing: 0.8vw;
+	
+
+}
+
+.square{
+	width: 100%;
+    height: 80%;
+	display: flex;
+	align-content: space-between;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.sguare1{
+width: 29%;
+height: 45%;
+background-color: gray;
+}
+
+.work{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+	font-size: 1.3vw;
+	letter-spacing: 0.5vw;
+	font-family: RobotoRegular; 
+}
+
+/*фотер*/
+.footer {
+	width: 100%;
+	height: 1055px;
+	background-color: #1c1a1a;
+	margin: 0;
+	position: relative;
+}
+  
+.footer_addr {
+    margin-left: 11%;
+    margin-top: 33%;
+    color: #b3b3b3;
+    width: 18%;
+    display: inline;
+    float: left:;
+}
+ 
+.f_email {
+    width: 10%;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    color: #b3b3b3;
+}
+ 
+.f_email a:active{	
+	color: #b3b3b3;
+	text-decoration: none;
+	animation: trianlet 300ms;
+}
+.f_email >a:link,.f_email > a:active,.f_email > a:link,.f_email > a:visited {
+	text-decoration: none;
+	color: #b3b3b3;
+	animation: trianlet 300ms;
+	border: none;		
+}
+ 
+.f_phone {
+    font-family: Raleway-Bold;
+    font-size: 1.6em;
+    text-decoration: none;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    border-bottom: 2px solid #fff;
+}
+.f_phone >a:active,.f_phone > a:link,.f_phone > a:link,.f_phone > a:visited {
+	border-style: none;
+	text-decoration: none;
+	color:#fff;
+	animation: trianlet 300ms;
+}
+.f_addr {
+    width: 80%;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    color: #b3b3b3;
+}
+.footers {
+	width: 100%;
+	display: inline;
+	float: left;
+}
+
+.footers >div {
+	float: left;
+}
+.footer_form {
+    width: 45%;
+    display: inline;
+    float: left;
+    margin-top: 4%;
+    margin-left: 10%;
+    position: relative;
+    z-index: 2;
+    transition: all 0.1s ease;
+}
+ 
+form.contact_form {
+	margin-top: 6%;
+}
+ 
+#fcontact_form {
+	
+}
+ 
+input#fcontact_form {
+    width: 52%;
+    border-style: none;
+    border-bottom: 1px solid #b3b3b3;
+    background-color: transparent;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    color: #b3b3b3;
+    text-decoration: none;
+    float: left;
+    display: inline;
+    margin-top: 10%;
+    height: 80px;
+    transition: all 0.1s ease;
+}
+
+ 
+ #fcontact_form:active {
+	font-size: 17px;
+	color: #fff;
+	border-style: none;
+	border-bottom: 2px solid #fff;
+	margin-bottom: -1px;
+	animation: trianlet 300ms;
+ } 
+ 
+ input#fcontact_form:active {
+ 	border-style: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 17px;
+	margin-bottom: -1px;
+ } 
+ 
+ input#fcontact_form:focus {
+ 	border-style: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 17px;
+	margin-bottom: -1px;
+ } 
+ 
+ button.fsubmit {
+	float: left;
+	width: 45%;
+    margin-left: 72%;
+    margin-top: -5%;
+    font-family: RobotoBk;
+    font-size: 1.7em;
+	display: inline-block;
+	border-style: none;
+	border-bottom: 1px solid #b3b3b3;
+	color: #b3b3b3;
+	background-color: transparent;
+	letter-spacing: 5px;
+	transition: all 0.1s ease;
+ }
+ 
+ button.fsubmit:hover {
+	float: left;
+	width: 450px;
+	margin-left: 586px;
+	margin-top: -45px;
+	font-family: RobotoBk; 
+	font-size: 28px;
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	animation: 500ms;
+ }
+ 
+ button.fsubmit:active {
+ 	animation: 300ms;
+	float: left;
+	width: 450px;
+	margin-left: 586px;
+	margin-top: -50px;
+	font-family: RobotoBk; 
+	font-size: 28px;
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	
+ }
+ 
+ .f_icons {
+    width: 15%;
+    margin-top: 8%;
+    margin-left: 47%;
+}
+ 
+.f_icons >img {
+    margin-left: -18%;
+    padding-right: 40%;
+}
+
+.f_icons >img:last-child {
+	padding-right: 0;
+}
+ 
+ #footer_logo {
+	text-align: center;
+    display: block;
+    position: absolute;
+    margin-top: 43%;
+    padding-left: 40%;
+    float: left;
+}
+ 
+ .footer_lt {
+    color: #b3b3b3;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    text-align: center;
+    padding-top: 50%;
+    padding-left: -1%;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+}
+.footer_arrow {
+    width: 9%;
+    height: 2%;
+    position: fixed;
+    top: 70%;
+    right: 3%;
+    transform: rotate(-90deg);
+    font-size: 1.2em;
+    text-align: center;
+
+}
+input{
+	outline:none;
+}
+body{
+	/*background-color: #1c1a1a;*/
+	margin: 0;
+	padding: 0;
+	position: absolute;
+    background-color: #1c1a1a ;
+}
+.boss{
+	padding: 0 10%;
+	margin: 0;
+}
+menu{
+	width: 100%;
+	height: 10vh;
+	background-color: red;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	height:100%;
+}
+
+header section{
+background-color: red;
+height: 70vh;
+margin-top: 10vh;
+}
+header section:nth-child(1){
+	margin-top: 0;
+}
+
+.block-img{
+width: 50%;
+height: 100%;
+background-color: blue;
+float: right;
+display: flex;
+align-items: center; 
+}
+
+.block-img img{
+width: 100%;
+height: 100%;
+}
+
+
+.block-paragraph{
+	background-color: #1c1a1a ;
+	height: 100%;
+	font-size: 2.4vw;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.block-paragraph .dot{
+	position: absolute;
+	top: 0;
+	width: 85%;
+	height: 40%;
+}
+.block-paragraph .dot img{
+	width: 100%;
+	height: 100%;
+}
+
+.studios{
+	position: absolute;
+	top: 5%;
+	color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.studios span{
+	width: 55%;
+	font-family: Raleway-Bold; 
+	font-size: 3vw;
+	letter-spacing: 0.6vw;
+	margin-left: 2%;
+}
+.studios hr{
+	display: inline-block;
+	width: 45%;
+	margin-left:0;
+}
+
+/*средний блок*/
+article{
+	width: 100%;
+	height: 80vh;
+	background-color: gray;
+	display: flex;
+	position: relative;
+}
+
+article section:nth-child(1){
+	width: 25%;
+	font-size: 3vw;
+	font-family: Raleway-Bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 3;	
+}
+article section:nth-child(2){
+	width: 50%;
+	font-family: RobotoRegular; 
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	z-index: 3;
+
+
+}
+article section h2{
+font-size: 2.3vw;
+letter-spacing: 1vw;
+margin: 15% 0 10% 0;
+}
+
+.command {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    top: -3%;
+    right: -9%;
+}
+.command span{
+font-family: Raleway-Bold;
+font-size: 2.5vw;
+letter-spacing: 1vw;
+color: white;
+margin-right: 0;
+}
+.command hr{
+	width: 40%;
+	height: 0.1vh;
+	display: inline-block;
+	margin-left: 0;
+   align-self: center;
+   background-color: white;
+}
+
+.toots {
+    position: absolute;
+    z-index: 2;
+    top: -10%;
+    right: -9%;
+    width: 45%;
+    height: 70%;
+}
+
+/* блок Что мы создали*/
+.haveСreated{
+	width: 100%;
+	height: 100vh;
+	margin-top: 20vh;
+
+}
+
+.haveСreated .caption{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	color: white;
+	font-family: Raleway-Bold;
+	font-size: 2.5vw;
+	letter-spacing: 0.8vw;
+	
+
+}
+
+.square{
+	width: 100%;
+    height: 80%;
+	display: flex;
+	align-content: space-between;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.sguare1{
+width: 29%;
+height: 45%;
+background-color: gray;
+}
+
+.work{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+	font-size: 1.3vw;
+	letter-spacing: 0.5vw;
+	font-family: RobotoRegular; 
+}
+
+/*фотер*/
+.footer {
+	width: 100%;
+	height: 1055px;
+	background-color: #1c1a1a;
+	margin: 0;
+	position: relative;
+}
+  
+.footer_addr {
+    margin-left: 11%;
+    margin-top: 33%;
+    color: #b3b3b3;
+    width: 18%;
+    display: inline;
+    float: left:;
+}
+ 
+.f_email {
+    width: 10%;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    color: #b3b3b3;
+}
+ 
+.f_email a:active{	
+	color: #b3b3b3;
+	text-decoration: none;
+	animation: trianlet 300ms;
+}
+.f_email >a:link,.f_email > a:active,.f_email > a:link,.f_email > a:visited {
+	text-decoration: none;
+	color: #b3b3b3;
+	animation: trianlet 300ms;
+	border: none;		
+}
+ 
+.f_phone {
+    font-family: Raleway-Bold;
+    font-size: 1.6em;
+    text-decoration: none;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    border-bottom: 2px solid #fff;
+}
+.f_phone >a:active,.f_phone > a:link,.f_phone > a:link,.f_phone > a:visited {
+	border-style: none;
+	text-decoration: none;
+	color:#fff;
+	animation: trianlet 300ms;
+}
+.f_addr {
+    width: 80%;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    color: #b3b3b3;
+}
+.footers {
+	width: 100%;
+	display: inline;
+	float: left;
+}
+
+.footers >div {
+	float: left;
+}
+.footer_form {
+    width: 45%;
+    display: inline;
+    float: left;
+    margin-top: 4%;
+    margin-left: 10%;
+    position: relative;
+    z-index: 2;
+    transition: all 0.1s ease;
+}
+ 
+form.contact_form {
+	margin-top: 6%;
+}
+ 
+#fcontact_form {
+	
+}
+ 
+input#fcontact_form {
+    width: 52%;
+    border-style: none;
+    border-bottom: 1px solid #b3b3b3;
+    background-color: transparent;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    color: #b3b3b3;
+    text-decoration: none;
+    float: left;
+    display: inline;
+    margin-top: 10%;
+    height: 80px;
+    transition: all 0.1s ease;
+}
+
+ 
+ #fcontact_form:active {
+	font-size: 17px;
+	color: #fff;
+	border-style: none;
+	border-bottom: 2px solid #fff;
+	margin-bottom: -1px;
+	animation: trianlet 300ms;
+ } 
+ 
+ input#fcontact_form:active {
+ 	border-style: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 17px;
+	margin-bottom: -1px;
+ } 
+ 
+ input#fcontact_form:focus {
+ 	border-style: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	font-size: 17px;
+	margin-bottom: -1px;
+ } 
+ 
+ button.fsubmit {
+	float: left;
+	width: 45%;
+    margin-left: 72%;
+    margin-top: -5%;
+    font-family: RobotoBk;
+    font-size: 1.7em;
+	display: inline-block;
+	border-style: none;
+	border-bottom: 1px solid #b3b3b3;
+	color: #b3b3b3;
+	background-color: transparent;
+	letter-spacing: 5px;
+	transition: all 0.1s ease;
+ }
+ 
+ button.fsubmit:hover {
+	float: left;
+	width: 450px;
+	margin-left: 586px;
+	margin-top: -45px;
+	font-family: RobotoBk; 
+	font-size: 28px;
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	animation: 500ms;
+ }
+ 
+ button.fsubmit:active {
+ 	animation: 300ms;
+	float: left;
+	width: 450px;
+	margin-left: 586px;
+	margin-top: -50px;
+	font-family: RobotoBk; 
+	font-size: 28px;
+	display: inline-block;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	
+ }
+ 
+ .f_icons {
+    width: 15%;
+    margin-top: 8%;
+    margin-left: 47%;
+}
+ 
+.f_icons >img {
+    margin-left: -18%;
+    padding-right: 40%;
+}
+
+.f_icons >img:last-child {
+	padding-right: 0;
+}
+ 
+ #footer_logo {
+	text-align: center;
+    display: block;
+    position: absolute;
+    margin-top: 43%;
+    padding-left: 40%;
+    float: left;
+}
+ 
+ .footer_lt {
+    color: #b3b3b3;
+    font-family: Raleway-Thin;
+    font-size: 1.9em;
+    text-align: center;
+    padding-top: 50%;
+    padding-left: -1%;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+}
+.footer_arrow {
+    width: 9%;
+    height: 2%;
+    position: fixed;
+    top: 70%;
+    right: 3%;
+    transform: rotate(-90deg);
+    font-size: 1.2em;
+    text-align: center;
+
+}
+input{
+	outline:none;
+}
+
