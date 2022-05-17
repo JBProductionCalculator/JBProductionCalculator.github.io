@@ -1,0 +1,52 @@
+:root{
+	--b1:#92cddc;
+	--b2:#b6dde8;
+	--b3:#daeef3;
+	--w:#ffffff;
+	--g:#45d000;
+}
+
+body{
+	font-family: "Regular", sans-serif;
+	/*background: var(--b1);*/
+}
+
+
+ul, body, li{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+
+
+
+/*функциональные классы*/
+#add_to_blank{
+	border: 2px solid blue;
+	visibility: hidden;
+}
+
+.none{
+	display: none!important;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+.r{
+	color: red;
+}
+
+.r::before{
+	content: ' ';
+}
+
+.g{
+	color: green;
+}

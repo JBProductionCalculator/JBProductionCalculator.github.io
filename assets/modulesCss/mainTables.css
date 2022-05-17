@@ -1,0 +1,154 @@
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*стили главной таблицы*/
+
+main{
+	overflow-x: hidden;
+}
+
+section.one_window{
+	position: relative;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 50px 50px;
+	padding-bottom: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	max-width: 100vw;
+}
+
+.main_table {
+	color: #000;
+	border-radius: 20px;
+}
+
+ul.one-row{
+	display: flex;
+	background:#f2f2f2;
+
+
+}
+
+ul.one-row:nth-child(2n){
+	display: flex;
+	background:#fff;
+}
+
+
+
+
+ul.one-row li{
+	overflow: hidden;
+	padding:20px 0;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	width: 128px;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+ul.one-row li:first-child{
+	border-right: 1px solid rgba(0,0,0,.2);
+	width: 200px;
+}
+
+
+/*Точечное изминение таблиц*/
+/*удалини вывода в рулонных и день ночь столбца Фальш шторы. делаю так чтобы это значение осталось в селектах выбора*/
+.roller_curtains ul:nth-child(1), .roller_curtains ul:nth-child(2) , .roller_curtains ul:nth-child(3),
+ .roller_curtains_day_night ul:nth-child(1),.roller_curtains_day_night ul:nth-child(2),.roller_curtains_day_night ul:nth-child(3){
+	background: #364754;
+    color: #fff;
+	
+}
+
+
+.roller_curtains_ready ul:first-child,
+.horizontal_louver_standard ul:first-child,
+.horizontal_louver_venus ul:first-child, .horizontal_louver_venus ul:nth-child(2),
+.new_vertical_127mm ul:first-child,
+.new_vertical_89mm ul:first-child,
+.mosquito_net  ul:first-child,
+.additonal_components ul:first-child
+{
+	background: #364754;
+    color: #fff;
+}
+
+
+.roller_curtains ul li:first-child,
+.roller_curtains_day_night ul li:first-child,
+.roller_curtains_ready ul li:first-child,
+.horizontal_louver_standard ul li:first-child,
+.horizontal_louver_venus ul li:first-child, .horizontal_louver_venus ul:nth-child(2),
+.new_vertical_127mm ul li:first-child,
+.new_vertical_89mm ul li:first-child,
+.mosquito_net  ul li:first-child,
+.additonal_components ul li:first-child
+{
+	background: #364754;
+    color: #fff;
+}
+
+
+.horizontal_louver_standard ul li{
+	width: 448px;
+}
+
+.horizontal_louver_venus ul li{
+	width: 299px;
+}
+
+.new_vertical_127mm ul li:nth-child(2),
+.new_vertical_89mm ul li:nth-child(2){
+	width: 766px;
+}
+
+
+.mosquito_net ul li:first-child{
+	width: 300px;
+	padding: 0 5px;
+}
+
+.mosquito_net ul li:nth-child(2),.mosquito_net ul li:nth-child(3){
+	width: 393px;
+}
+
+
+.roller_curtains_ready ul.one-row li{
+	width: 50px;
+}
+
+.roller_curtains_ready ul.one-row li:first-child{
+	width: 100px;
+}
+
+
+
+#additonal_components .main_table li:first-child{
+	width: 594px;
+}
+#additonal_components .main_table li:last-child{
+	width: 500px;
+}
+
+
+
+@media screen and (max-width: 1200px){
+	.roller_curtains_ready ul.one-row li {
+	    width: 40px;
+	}
+
+	ul.one-row li{
+		width: 130px;
+	}
+
+	.horizontal_louver_venus ul li:first-child, .horizontal_louver_standard ul li:first-child {
+	    width: 300px;
+	}
+
+
+}
