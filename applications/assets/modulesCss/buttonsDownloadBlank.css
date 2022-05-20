@@ -1,0 +1,61 @@
+
+
+.buttons_download_blank{
+	position: fixed;
+	left: - 400px;
+	text-align: right;
+}
+
+
+.download_blank {
+	/*float: left;*/
+	position: relative;
+}
+
+
+.download_blank button {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background: inherit;
+    padding: 10px 10px;
+    border: 3px solid #fcbf14;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    outline: none;
+    background: #fcbf14;
+}
+
+.download_blank .amount_goods{
+	margin-left: 10px;
+		
+}
+
+.blank_error {
+    position: absolute;
+    bottom: -40px;
+    z-index: 900;
+    color: red;
+    /*text-transform: uppercase; */
+/*    width: 100%;
+    text-align: center;*/
+    padding-left: 13px;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+	.download_blank button{
+		font-size: 11px;
+		padding: 13px;
+	}
+
+
+}
+

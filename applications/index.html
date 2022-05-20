@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='UTF-8'>
+      <title>Подсчет стоимости</title>
+      <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+      <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
+      <link rel='stylesheet' href='assets/app.css'>
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/mainTables.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/calculation.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/switchTabs.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/buttonsDownloadBlank.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/blankDoc.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/blankWebWindow.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/customerData.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/navigateCalculator.css">
+      <link rel="stylesheet" type="text/css" href="assets/modulesCSS/contactInformation.css">
+
+   </head>
+   <body>
+      <div id="switch_tabs" class="switch_tabs">
+         <ul>
+            <li class="click_tab" data-click='curtains' >Рулонные шторы</li>
+            <li data-click='curtains' >День-Ночь</li>
+            <li data-click='curtains' >Готовые рулонные шторы</li>
+            <li data-click='horizontal_standard' >Горизонтальные жалюзи "Стандарт"</li>
+            <li data-click='horizontal_venus' >Горизонтальные жалюзи "Венус"</li>
+            <li data-click='vertical' >Вертикальные жалюзи 127 мм.</li>
+            <li data-click='vertical' >Вертикальные жалюзи 89 мм.</li>
+            <li data-click='mosquito' >Рулонные москитные сетки</li>
+            <li data-click='additonal_components' >Дополнителные комплектующие</li>
+         </ul>
+      </div>
+      <main>
+         <!-- новый руллоный калькулятор -->
+         <section id='roller_curtains' class='one_window' >
+            <div class='roller_curtains main_table' >
+               <ul class='one-row'>
+                  <li>Система</li>
+                  <li>COMPACT <br> ФАЛШ ШТОРЫ</li>
+                  <li>ФАЛШ ШТОРЫ</li>
+                  <li>MINI</li>
+                  <li>STANDART</li>
+                  <li>MAXIMUS</li>
+                  <li>UNI Плоские Направл.</li>
+                  <li>UNI П-обр Направл..</li>
+               </ul>
+               <ul class='one-row'>
+                  <li>Вал</li>
+                  <li>19</li>
+                  <li>19</li>
+                  <li>19</li>
+                  <li>25</li>
+                  <li>35</li>
+                  <li>19</li>
+                  <li>19</li>
+               </ul>
+               <ul class='one-row' >
+                  <li>Ткани цвет системы</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+               </ul>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="curtains">
+              <!-- Данные клиента которые летают между вкладками -->
+            <div class="flyingCustomerData customer_data">
+                   <ul class="customer_info">
+                    <li>*</li>
+                    <li>Дилер:</li>
+                    <li><input type="text" value=""></li>
+                  </ul>
+                  <ul class="phone_customer">
+                    <li>*</li>
+                    <li>Моб. получателя:</li>
+                    <li><input type="text" value=""></li>
+                  </ul>
+                  <ul class="customer_initials">
+                    <li>*</li>
+                    <li>ФИО получателя:</li>
+                    <li><input type="text" value=""></li>
+                  </ul>
+                  <ul class="customer_city">
+                    <li>*</li>
+                    <li>Город:</li>
+                    <li><input type="text" value=""></li>
+                  </ul>
+                  <ul class="customer_region">
+                    <li>*</li>
+                    <li>Область:</li>
+                    <li><input type="text" value=""></li>
+                  </ul>
+                  <ul class="customer_district">
+                    <li>*</li>
+                    <li>Район:</li>
+                    <li><input type="text" value=""></li>
+                  </ul>
+                  <ul class="customer_post_office">
+                    <li>*</li>                
+                    <li>Доставка:</li>
+                    <li class="delivery_services">
+                       <select class="delivery_method">
+                          <option value="Новая почта">Новая почта</option>
+                          <option value="Delivery">Delivery</option>
+                          <option value="Самовывоз">Самовывоз</option>
+                       </select>
+                       <div class="delivery_services_container">
+                          <div class="branch_number">
+                             <span>Стандартное отделения:</span>
+                             <input type="text" class="branch_valid" value="">    
+                          </div>
+                          <div class="branch_cargo_number">
+                             <span>Грузовое отделения:</span>
+                             <input type="text" class="branch_valid" value="">    
+                          </div>
+
+                          <div class="appraisal">
+                             <span>Оценка:</span>
+                             <input type="text" value="">  
+                          </div>    
+                        </div>
+
+                    </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="priceСalculation">
+                <div class="flex">
+                  <div class='productSelect'>
+                     <!-- в этот тег добавляются два тега select -->
+                  </div>
+               </div>
+               <div class="main_width inline"><span>Ширинна, мм:</span> <input type='text' id='width' value='' placeholder="Введите ширину"><span class="widthExceeded"></span></div>
+
+               <div class="glass_width inline none"><span>Ширинна стекла, мм:</span> <input type='text' id='glassWidth' value='' placeholder="Введите ширину"><span class="glassWidthExceeded"></span></div>
+
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' placeholder="Введите высоту"><span class="heightExceeded"></span></div>
+
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+              
+               <div class="boxControlMethod none">
+                  Способ управления:
+                  <select class="controlMethod">
+                     <option value="Цепь">Цепь</option>
+                     <option value="Мот.">Мотор</option>
+                  </select>
+                  <div class="controlMethodChanel none inline">
+                     <span>Пульт:</span> 
+                     <select >
+                        <option value="1 кан.">1 канал</option>
+                        <option value="2 кан.">2 канала</option>
+                        <option value="5 кан.">5 каналов</option>
+                     </select>
+                  </div>
+                  <div class="quantityRemotes none inline">
+                     <span >Количество пультов:</span>
+                     <select  data-quantityRemote>
+                        <option value="1">1 шт.</option>
+                        <option value="2">2 шт.</option>
+                        <option value="3">3 шт.</option>
+                        <option value="4">4 шт.</option>
+                        <option value="5">5 шт.</option>
+                        <option value="6">6 шт.</option>
+                        <option value="7">7 шт.</option>
+                        <option value="8">8 шт.</option>
+                        <option value="9">9 шт.</option>
+                        <option value="10">10шт.</option>
+                     </select>
+                  </div>
+                  <div class="chargingRemotes none inline">
+                     <span >Зарядка:</span>
+                     <select >
+                        <option value="Нет" >Нет</option>
+                        <option value="1">1 шт.</option>
+                        <option value="2">2 шт.</option>
+                        <option value="3">3 шт.</option>
+                        <option value="4">4 шт.</option>
+                        <option value="5">5 шт.</option>
+                        <option value="6">6 шт.</option>
+                        <option value="7">7 шт.</option>
+                        <option value="8">8 шт.</option>
+                        <option value="9">9 шт.</option>
+                        <option value="10">10шт.</option>
+                     </select>
+                  </div>
+               </div>
+               <form class="configurations">
+                  <div>
+                     <p>Цвет:</p>
+                     <p><input type="radio" name="colorSystem" value="Бел." checked>Белый</p>
+                     <p><input type="radio" name="colorSystem" value="Кор.">Коричневый</p>
+                  </div>
+                  <div>
+                     <p>Стороны управления:</p>
+                     <p><input type="radio" name="controlType" value="L" checked>L</p>
+                     <p><input type="radio" name="controlType" value="R">R</p>
+                  </div>
+                  <div class="fixationSystem"   >
+                     <p>Система фиксации полотна:</p>
+                     <p><input type="radio" name="fixationSystem" value="Без фиксации" checked>Без фиксации</p>
+                     <p><input type="radio" name="fixationSystem" value="Магнитная" >Магнитная</p>
+                     <p><input type="radio" name="fixationSystem" value="Направляющая струна"><span>Направляющая струна</span></p>
+                  </div>
+                  <div class="sizeSystem"  >
+                     <p>Размер:</p>
+                     <p><input type="radio" name="sizeSystem" value="СТД" checked>СТД по полотну</p>
+                     <p><input type="radio" name="sizeSystem" value="РГ">РГ по креплению</p>
+                  </div>
+                  <div class="chainLoad">
+                     <p>Груз цепи:</p>
+                     <p><input type="radio" name="chainLoad" value="Без груза" checked>Без груза</p>
+                     <p><input type="radio" name="chainLoad" value="Груз цепи">Груз цепи</p>
+                  </div>
+                  <div  class="chainFixing">
+                     <p>Фиксатор цепи:</p>
+                     <p><input type="radio" name="chainFixing" value="Без фиксатора" checked>Без фиксатора</p>
+                     <p><input type="radio" name="chainFixing" value="Фикс. цепи">Фикс. цепи</p>
+                  </div>
+                  <div class="chainFixingUniversal">
+                     <p>Фиксатор цепи универсальный:</p>
+                     <p><input type="radio" name="chainFixingUniversal" value="Без фиксатора" checked>Без фиксатора</p>
+                     <p><input type="radio" name="chainFixingUniversal" value="Фикс. цепи универс.">Фикс. цепи универс.</p>
+                  </div>
+                  <div class="additionalScotchTape">
+                     <p>Доп. скотч:</p>
+                     <p><input type="radio" name="additionalScotchTape" value="Без скотча" checked>Без скотча</p>
+                     <p><input type="radio" name="additionalScotchTape" value="Доп. скотч">Доп. скотч</p>
+                  </div>
+               </form>
+               <div>
+                 <!--  <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="curtains" value="Добавить в бланк" >
+               </div>
+               <div>
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='curtains'></span>  <span data-totalCostHryvnia='curtains'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='curtains'>
+               <div id="screen_blanks_roller_curtains" class="screen_blank none" data-viewInBlank="curtains" >
+                  <ul>
+                     <li class="number_of_blanks">_</li>
+                     <li class="system_and_color">Система и Цвет</li>
+                     <li class="width">Ширина мм</li>
+                     <li class="height">Высота мм</li>
+                     <li class="control">Упр L/R</li>
+                     <li class="quantity">Количество</li>
+                     <li class="fastening">Крепление</li>
+                     <li class="remark">Примечание</li>
+                  </ul>
+               </div>
+
+               <!-- <div class="footer">      -->
+                  <div id="curtainsBlank_download" class="download_blank " data-view='curtains' data-viewInBlank="curtains" >
+                     <button  onclick="exportHTML('curtainsBlank','Ролл штор'); "><span>Скачать блак "Рулонные шторы"</span><span class="amount_goods"></span></button>
+                     <p class="blank_error none">Заполните данные дилера</p>                     
+                  </div>
+                  
+               <!-- </div> -->
+            </div>
+
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#roller_curtains .main_table" ></a>
+               <a href="#roller_curtains .customer_data_box" ></a>
+               <a href="#roller_curtains .priceСalculation" ></a>
+               <a href="#roller_curtains .screen_blank_box" ></a>
+            </div>
+         </section>
+          <!-- -------------------------------------------- -->
+         <!-- новый руллоный калькулятор день-ночь -->
+         <section id='roller_curtains_day_night' class='one_window'>
+            <div class='roller_curtains_day_night main_table' >
+               <ul class='one-row'>
+                  <li>Система</li>
+                  <li>EcoCOMPACT <br> ФАЛШ ШТОРЫ</li>
+                  <li>ФАЛШ ШТОРЫ</li>
+                  <li>MINI</li>
+                  <li>STANDART</li>
+                  <li>MAXIMUS</li>
+                  <li>UNI Плоские Направл.</li>
+                  <li>UNI П-обр Направл.</li>
+               </ul>
+               <ul class='one-row'>
+                  <li>Вал</li>
+                  <li>19</li>
+                  <li>19</li>
+                  <li>19</li>
+                  <li>25</li>
+                  <li>35</li>
+                  <li>19</li>
+                  <li>19</li>
+               </ul>
+               <ul class='one-row' >
+                  <li>Ткани цвет системы</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел.</li>
+                  <li>Бел./Кор.</li>
+                  <li>Бел./Кор.</li>
+               </ul>
+            </div>
+            
+            <div class="customer_data_box" data-flyElement="curtains"></div>
+
+            <div class="priceСalculation">
+               <div class="flex">
+                  <div class='productSelect'>
+                     <!-- в этот тег добавляются два тега select -->
+                  </div>
+               </div>
+
+               <div class="main_width inline"><span>Ширинна, мм:</span> <input type='text' id='width' value='' placeholder="Введите ширину"><span class="widthExceeded"></span></div>
+
+               <div class="glass_width inline none"><span>Ширинна стекла, мм:</span> <input type='text' id='glassWidth' value='' placeholder="Введите ширину"><span class="glassWidthExceeded"></span></div>
+
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' placeholder="Введите высоту"><span class="heightExceeded"></span></div>
+              
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+               
+               <div class="boxControlMethod none">
+                  Способ управления:
+                  <select class="controlMethod">
+                     <option value="Цепь">Цепь</option>
+                     <option value="Мот." >Мотор</option>
+                  </select>
+                  <div class="controlMethodChanel none inline">
+                     <span>Пульт:</span> 
+                     <select >
+                        <option value="1 кан.">1 канал</option>
+                        <option value="2 кан.">2 канала</option>
+                        <option value="5 кан.">5 каналов</option>
+                     </select>
+                  </div>
+                  <div class="quantityRemotes none inline">
+                     <span >Количество пультов:</span>
+                     <select  data-quantityRemote>
+                        <option value="1">1 шт.</option>
+                        <option value="2">2 шт.</option>
+                        <option value="3">3 шт.</option>
+                        <option value="4">4 шт.</option>
+                        <option value="5">5 шт.</option>
+                        <option value="6">6 шт.</option>
+                        <option value="7">7 шт.</option>
+                        <option value="8">8 шт.</option>
+                        <option value="9">9 шт.</option>
+                        <option value="10">10шт.</option>
+                     </select>
+                  </div>
+                  <div class="chargingRemotes none inline">
+                     <span >Зарядка:</span>
+                     <select >
+                        <option value="Нет" >Нет</option>
+                        <option value="1">1 шт.</option>
+                        <option value="2">2 шт.</option>
+                        <option value="3">3 шт.</option>
+                        <option value="4">4 шт.</option>
+                        <option value="5">5 шт.</option>
+                        <option value="6">6 шт.</option>
+                        <option value="7">7 шт.</option>
+                        <option value="8">8 шт.</option>
+                        <option value="9">9 шт.</option>
+                        <option value="10">10шт.</option>
+                     </select>
+                  </div>
+               </div>
+               <form class="configurations">
+                  <div>
+                     <p>Цвет:</p>
+                     <p><input type="radio" name="colorSystem" value="Бел." checked>Белый</p>
+                     <p><input type="radio" name="colorSystem" value="Кор.">Коричневый</p>
+                  </div>
+                  <div>
+                     <p>Стороны управления:</p>
+                     <p><input type="radio" name="controlType" value="L" checked>L</p>
+                     <p><input type="radio" name="controlType" value="R">R</p>
+                  </div>
+                  <div class="fixationSystem"   >
+                     <p>Система фиксации полотна:</p>
+                     <p><input type="radio" name="fixationSystem" value="Без фиксации" checked>Без фиксации</p>
+                     <p><input type="radio" name="fixationSystem" value="Магнитная" >Магнитная</p>
+                     <p><input type="radio" name="fixationSystem" value="Направляющая струна"><span>Направляющая струна</span></p>
+                  </div>
+                  <div class="sizeSystem"  >
+                     <p>Размер:</p>
+                     <p><input type="radio" name="sizeSystem" value="СТД" checked>СТД по полотну</p>
+                     <p><input type="radio" name="sizeSystem" value="РГ">РГ по креплению</p>
+                  </div>
+                  <div class="chainLoad">
+                     <p>Груз цепи:</p>
+                     <p><input type="radio" name="chainLoad" value="Без груза" checked>Без груза</p>
+                     <p><input type="radio" name="chainLoad" value="Груз цепи">Груз цепи</p>
+                  </div>
+                  <div  class="chainFixing">
+                     <p>Фиксатор цепи:</p>
+                     <p><input type="radio" name="chainFixing" value="Без фиксатора" checked>Без фиксатора</p>
+                     <p><input type="radio" name="chainFixing" value="Фикс. цепи">Фикс. цепи</p>
+                  </div>
+                  <div class="chainFixingUniversal">
+                     <p>Фиксатор цепи универсальный:</p>
+                     <p><input type="radio" name="chainFixingUniversal" value="Без фиксатора" checked>Без фиксатора</p>
+                     <p><input type="radio" name="chainFixingUniversal" value="Фикс. цепи универс.">Фикс. цепи универс.</p>
+                  </div>
+                  <div class="additionalScotchTape">
+                     <p>Доп. скотч:</p>
+                     <p><input type="radio" name="additionalScotchTape" value="Без скотча" checked>Без скотча</p>
+                     <p><input type="radio" name="additionalScotchTape" value="Доп. скотч">Доп. скотч</p>
+                  </div>
+               </form>
+               <div>
+                 <!--  <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="curtains" value="Добавить в бланк" >
+               </div>
+               <div>
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <!--  <div class="currencyConverter inline">Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> <span class="newConverterPrice"></span></div> -->
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='curtains'></span>  <span data-totalCostHryvnia='curtains'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='curtains'></div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#roller_curtains_day_night .main_table" ></a>
+               <a href="#roller_curtains_day_night .customer_data_box" ></a>
+               <a href="#roller_curtains_day_night .priceСalculation" ></a>
+               <a href="#roller_curtains_day_night .screen_blank_box" ></a>
+            </div>
+         </section>
+          <!-- -------------------------------------------- -->
+         <section id="roller_curtains_ready" class="one_window">
+            <div class="roller_curtains_ready_scroll main_table">
+               <div class="roller_curtains_ready main_table"  >
+                  <ul class="one-row">
+                     <li>Ширина, мм:</li>
+                     <li>350</li>
+                     <li>400</li>
+                     <li>450</li>
+                     <li>500</li>
+                     <li>550</li>
+                     <li>600</li>
+                     <li>650</li>
+                     <li>700</li>
+                     <li>750</li>
+                     <li>800</li>
+                     <li>850</li>
+                     <li>900</li>
+                     <li>950</li>
+                     <li>1000</li>
+                     <li>1050</li>
+                     <li>1100</li>
+                     <li>1150</li>
+                     <li>1200</li>
+                     <li>1250</li>
+                     <li>1300</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="curtains"></div>
+
+
+            <div class="priceСalculation">
+               <div class="flex">
+                  <div class='productSelect'>
+                     <!-- в этот тег добавляются два тега select -->
+                  </div>
+               </div>
+               <div class="main_width inline">
+                  <span>Ширинна, мм:</span>
+                  <div id="widthBox" class="inline"></div>
+                  <input  type="" id="fakeProductSystem"  class="none" value="">
+                  <span class="widthExceeded"></span>
+               </div>
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' placeholder="Введите высоту"><span class="heightExceeded"></span></div>
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+               
+               <form class="configurations">
+                  <div class="chainLoad">
+                     <p>Груз цепи:</p>
+                     <p><input type="radio" name="chainLoad" value="Без груза" checked>Без груза</p>
+                     <p><input type="radio" name="chainLoad" value="Груз цепи">Груз цепи</p>
+                  </div>
+                  <div  class="chainFixing">
+                     <p>Фиксатор цепи:</p>
+                     <p><input type="radio" name="chainFixing" value="Без фиксатора" checked>Без фиксатора</p>
+                     <p><input type="radio" name="chainFixing" value="Фикс. цепи">Фикс. цепи</p>
+                  </div>
+                  <div class="fixationSystem"   >
+                     <p>Система фиксации полотна:</p>
+                     <p><input type="radio" name="fixationSystem" value="Без фиксации" checked>Без фиксации</p>
+                     <p><input type="radio" name="fixationSystem" value="Магнитная" >Магнитная</p>
+                     <p><input type="radio" name="fixationSystem" value="Направляющая струна"><span>Направляющая струна</span></p>
+                  </div>
+               </form>
+               <div>
+                 <!--  <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="curtains" value="Добавить в бланк" >
+               </div>
+               <div>
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span> </div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <!-- <div class="currencyConverter inline">Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> <span class="newConverterPrice"></span></div> -->
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='curtains'></span>  <span data-totalCostHryvnia='curtains'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='curtains'></div>
+
+           <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#roller_curtains_ready .main_table" ></a>
+               <a href="#roller_curtains_ready .customer_data_box" ></a>
+               <a href="#roller_curtains_ready .priceСalculation" ></a>
+               <a href="#roller_curtains_ready .screen_blank_box" ></a>
+            </div>
+         </section>
+
+          <!-- -------------------------------------------- -->
+         <section id='horizontal_louver_standard' class='one_window'>
+            <div class='horizontal_louver_standard main_table' >
+               <ul class='one-row'>
+                  <li>Жалюзи горизонтальные "Стандарт"</li>
+                  <li>25мм</li>
+                  <li>16мм</li>
+               </ul>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="horizontal_standard">
+            
+            </div>       
+
+
+            <div class="priceСalculation">
+               <div class="flex">
+                  <div class='productSelect'>
+                     <!-- в этот тег добавляются два тега select -->
+                  </div>
+               </div>
+               <div class="main_width inline"><span>Ширина, мм:</span> <input type='text' id='width' value='' placeholder="Введите ширину"><span class="widthExceeded"></span></div>
+
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' placeholder="Введите высоту"><span class="heightExceeded"></span></div>
+
+               <div class="inline">Глубина штапика, мм: <input type='text' id='glazingBeadDepth'  value='' placeholder="Введите глубину"></div>
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+               
+               <form class="configurations">
+                  <div class="plasticRetainer">
+                     <p>Система фиксации:</p>
+                     <p><input type="radio" name="plasticRetainer" value="Без фиксатора" checked>Без фиксатора</p>
+                     <p><input type="radio" name="plasticRetainer" value="Пласт. Фиксатор">Пласт. Фиксатор</p>
+                     <p><input type="radio" name="plasticRetainer" value="Напр. струна">Напр. струна</p>
+                  </div>
+               </form>
+               <div>
+                 <!--  <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="horizontal_standard" value="Добавить в бланк" >
+               </div>
+               <div>
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <!-- <div class="currencyConverter inline">Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> <span class="newConverterPrice"></span></div> -->
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='horizontalStandard'></span>  <span data-totalCostHryvnia='horizontalStandard'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='horizontal_standard'>
+               <div id="screen_horizontal_louver_standard" class="screen_blank none" data-viewInBlank="horizontal_standard">
+                  <ul>
+                     <li class="number_of_blanks">_</li>
+                     <li class="system_and_color">Система и Цвет</li>
+                     <li class="width">Ширина мм</li>
+                     <li class="height">Высота мм</li>
+                     <li class="control">Упр L/R</li>
+                     <li class="quantity">Количество</li>
+                     <li class="fastening">Крепление</li>
+                     <li class="remark">Примечание</li>
+                  </ul>
+                 <!--  <ul>
+                     <li class="number_of_blanks">1</li>
+                     <li class="system_and_color"></li>
+                     <li class="width"></li>
+                     <li class="height"></li>
+                     <li class="control"></li>
+                     <li class="quantity"></li>
+                     <li class="fastening"></li>
+                  </ul> -->
+               </div>
+               <div id="horizontalStandardBlank_download" class="download_blank " data-view='horizontal_standard'  data-viewInBlank="horizontal_standard" >
+                  <button   onclick="exportHTML('horizontalStandardBlank', 'Горизонтал');"><span>Скачать блак "Горизонтальные жалюзи Стандарт"</span><span class="amount_goods"></span> </button> 
+                   <p class="blank_error none">Заполните данные дилера</p> 
+               </div>
+               
+            </div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#horizontal_louver_standard .main_table" ></a>
+               <a href="#horizontal_louver_standard .customer_data_box" ></a>
+               <a href="#horizontal_louver_standard .priceСalculation" ></a>
+               <a href="#horizontal_louver_standard .screen_blank_box" ></a>
+            </div>
+           
+         </section>
+
+          <!-- -------------------------------------------- -->
+         <section id='horizontal_louver_venus' class='one_window'>
+            <div class='horizontal_louver_venus main_table'  >
+               <ul class='one-row'>
+                  <li>Жалюзи горизонтальные "Венус"</li>
+                  <li>25мм</li>
+                  <li>25мм</li>
+                  <li>16мм</li>
+               </ul>
+               <ul class='one-row'>
+                  <li>-----</li>
+                  <li>Стандарт</li>
+                  <li>Полн.Затемн.</li>
+                  <li>Стандарт</li>
+               </ul>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="horizontal_venus">
+               
+            </div>
+            
+            <div class="priceСalculation">
+               <div class="flex">
+                  <div class='productSelect'>
+                     <!-- в этот тег добавляются два тега select -->
+                  </div>
+               </div>
+               <div class="main_width inline"><span>Ширина, мм:</span> <input type='text' id='width' value='' placeholder="Введите ширину"><span class="widthExceeded"></span></div>
+
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' placeholder="Введите высоту"><span class="heightExceeded"></span></div>
+
+               <div class="inline">Глубина штапика, мм: <input type='text' id='glazingBeadDepth'  value='' placeholder="Введите глубину"></div>
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+               
+               <form class="configurations">
+                  <div class="brakeMechanism">
+                     <p>Система фиксации:</p>
+                     <p><input type="radio" name="brakeMechanism" value="Без механизма" checked>Без механизма</p>
+                     <p><input type="radio" name="brakeMechanism" value="Тормозн. механ." >Тормозной механизм</p>
+                  </div>
+               </form>
+               <div>
+                  <!-- <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="horizontal_venus" value="Добавить в бланк" >
+               </div>
+               <div>
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <!-- <div class="currencyConverter inline">Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> <span class="newConverterPrice"></span></div> -->
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='horizontalVenus'></span>  <span data-totalCostHryvnia='horizontalVenus'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='horizontal_venus'>
+               <div id="screen_horizontal_louver_venus" class="screen_blank none" data-viewInBlank="horizontal_venus" >
+                  <ul>
+                     <li class="number_of_blanks">_</li>
+                     <li class="system_and_color">Система и Цвет</li>
+                     <li class="width">Ширина мм</li>
+                     <li class="height">Высота мм</li>
+                     <li class="control">Упр L/R</li>
+                     <li class="quantity">Количество</li>
+                     <li class="fastening">Крепление</li>
+                     <li class="remark">Примечание</li>
+                  </ul>
+
+               </div>
+               <!-- <div class="footer"> -->
+                  <div id="horizontalVenusBlank_download" class="download_blank " data-view='horizontal_venus'  data-viewInBlank="horizontal_venus">
+                     <button   onclick="exportHTML('horizontalVenusBlank', 'Венус');"><span>Скачать блак "Горизонтальные жалюзи Венус"</span> <span class="amount_goods"></span>  </button>
+                      <p class="blank_error none">Заполните данные дилера</p> 
+                  </div>
+                  
+               <!-- </div> -->
+
+            </div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#horizontal_louver_venus .main_table" ></a>
+               <a href="#horizontal_louver_venus .customer_data_box" ></a>
+               <a href="#horizontal_louver_venus .priceСalculation" ></a>
+               <a href="#horizontal_louver_venus .screen_blank_box" ></a>
+            </div>
+
+            
+         </section>
+
+          <!-- -------------------------------------------- -->
+         <section id='new_vertical_127mm' class='one_window'>
+            <div class='new_vertical_127mm main_table'>
+               <ul class='one-row'>
+                  <li>Название ткани</li>
+                  <li>Код цвета</li>
+                  <li>цена м.кв</li>
+               </ul>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="vertical">
+            
+            </div>
+
+            <div id='calculationNewVertical127mm' class="priceСalculation">
+               <div id='productSelectNewVertical127mm'>
+                  <!-- в этот тег добавляются два тега select-->
+               </div>
+               <div class="inline">Ширинна, мм: <input type='text' id='width' value='' data-size='1000'><span class="widthExceeded"></span></div>
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' data-size='1500'><span class="heightExceeded"></span></div>
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+               <div class="none">Количество ламелий: <input type='text'  id='number_of_lamellas' ></div>
+
+               <div>
+                  <form class="configurations" >
+                     <div class="controlType">
+                        <p>Тип управления:</p>
+                        <p>Т1<input type="radio" name="controlType" value="Т1" checked></p>
+                        <p>Т2<input type="radio" name="controlType" value="Т2"></p>
+                        <p>Т3<input type="radio" name="controlType" value="Т3"></p>
+                        <p>Т4<input type="radio" name="controlType" value="Т4"></p>
+                     </div>
+                     <div class="fastening_selected">
+                        <p>Крепление:</p>
+                        <p><input type="radio" name='fastening_selected' value="Потолочные" checked>Потолочные</p>
+                        <p><input type="radio" name='fastening_selected' value="Стеновые">Стеновые</p>
+                        <p><input type="radio" name='fastening_selected' value="Стеновые с удленителем">Стеновые с удленителе</p>
+                        <p>
+                           <select class="amountFastening">
+                              <option value="2">2шт</option>
+                              <option value="3">3шт</option>
+                              <option value="4">4шт</option>
+                              <option value="5">5шт</option>
+                              <option value="6">6шт</option>
+                              <option value="7">7шт</option>
+                              <option value="8">8шт</option>
+                              <option value="9">9шт</option>
+                              <option value="10">10шт</option>
+                           </select>
+                        </p>
+                     </div>
+                  </form>
+               </div>
+               <div>
+                 <!--  <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="vertical" value="Добавить в бланк">
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <!-- <div class="currencyConverter inline">Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> <span class="newConverterPrice"></span></div> -->
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='vertical'></span>  <span data-totalCostHryvnia='vertical'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='vertical'>
+               <div id="secreen_new_vertical_127mm" class="screen_blank none" data-viewInBlank="vertical" >
+                  <ul>
+                     <li class="number_of_blanks">_</li>
+                     <li class="system_and_color">Система и Цвет</li>
+                     <li class="width">Ширина мм</li>
+                     <li class="height">Высота мм</li>
+                     <li class="control">Упр L/R</li>
+                     <li class="quantity">Количество</li>
+                     <li class="fastening">Крепление</li>
+                     <li class="remark">Примечание</li>
+                  </ul>
+               </div>
+
+               <!-- <div class="footer"> -->
+                  <div id="newVerticalBlank_download" class="download_blank " data-view='vertical' data-viewInBlank="vertical" >
+                     <button  onclick="exportHTML('nweVerticalBlank', 'Вертикал');"> <span> Скачать блак "Вертикальные жалюзи"</span><span class="amount_goods"></span></button>  
+                     <p class="blank_error none">Заполните данные дилера</p> 
+                  </div>
+                  
+               <!-- </div> -->
+               
+            </div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#new_vertical_127mm .main_table" ></a>
+               <a href="#new_vertical_127mm .customer_data_box" ></a>
+               <a href="#new_vertical_127mm .priceСalculation" ></a>
+               <a href="#new_vertical_127mm .screen_blank_box" ></a>
+            </div>
+         </section>
+
+          <!-- -------------------------------------------- -->
+         <section id='new_vertical_89mm' class='one_window'>
+            <div class='new_vertical_89mm main_table'>
+               <ul class='one-row'>
+                  <li>Название ткани</li>
+                  <li>Код цвета</li>
+                  <li>цена м.кв</li>
+               </ul>
+            </div>
+
+           <div class="customer_data_box" data-flyElement="vertical"></div>
+
+            <div id='calculationNewVertical89mm' class="priceСalculation">
+               <div id='productSelectNewVertical89mm'>
+                  <!-- в этот тег добавляются два тега select-->
+               </div>
+
+               <div class="inline">Ширинна, мм: <input type='text' id='width' value='' data-size='1000'><span class="widthExceeded"></span></div>
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' data-size='1500'><span class="heightExceeded"></span></div>
+               <div class=" inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+               <div class="none">Количество ламелий: <input type='text'  id='number_of_lamellas' ></div>
+               
+               <div>
+                  <form class="configurations" >
+                     <div class="controlType">
+                        <p>Тип управления:</p>
+                        <p>Т1<input type="radio" name="controlType" value="Т1" checked></p>
+                        <p>Т2<input type="radio" name="controlType" value="Т2"></p>
+                        <p>Т3<input type="radio" name="controlType" value="Т3"></p>
+                        <p>Т4<input type="radio" name="controlType" value="Т4"></p>
+                     </div>
+                     <div class="fastening_selected">
+                        <p>Крепление:</p>
+                        <p><input type="radio" name='fastening_selected' value="Потолочные" checked>Потолочные</p>
+                        <p><input type="radio" name='fastening_selected' value="Стеновые">Стеновые</p>
+                        <p><input type="radio" name='fastening_selected' value="Стеновые с удленителем">Стеновые с удленителе</p>
+                        <p>
+                           <select class="amountFastening">
+                              <option value="2">2шт</option>
+                              <option value="3">3шт</option>
+                              <option value="4">4шт</option>
+                              <option value="5">5шт</option>
+                              <option value="6">6шт</option>
+                              <option value="7">7шт</option>
+                              <option value="8">8шт</option>
+                              <option value="9">9шт</option>
+                              <option value="10">10шт</option>
+                           </select>
+                        </p>
+                     </div>
+                  </form>
+               </div>
+               <div>
+                  <!-- <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="vertical" value="Добавить в бланк">
+               </div>
+               <div  class="priceProd inline " ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='vertical'></span>  <span data-totalCostHryvnia='vertical'></span></div>
+            </div>
+            
+            <div class="screen_blank_box"  data-flyElement='vertical'></div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#new_vertical_89mm .main_table" ></a>
+               <a href="#new_vertical_89mm .customer_data_box" > </a>
+               <a href="#new_vertical_89mm .priceСalculation" ></a>
+               <a href="#new_vertical_89mm .screen_blank_box" > </a>
+            </div>
+         </section>
+
+         <section id='mosquito_net' class='one_window'>
+            <div class='mosquito_net main_table'>
+               <ul class='one-row'>
+                  <li>Рулонные Короб</li>
+                  <li>37</li>
+                  <li>41</li>
+                 
+               </ul>
+               <ul class="one-row">
+                  <li>В коробе с направляющими</li>
+                  <li>$ 1м.кв.</li>
+                  <li>$ 1м.кв.</li>
+                  
+               </ul>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="mosquito">        
+            </div>
+
+            <div class="priceСalculation">
+               <div class="flex">
+                  <div class='productSelect'>
+                     <!-- в этот тег добавляются два тега select -->
+                  </div>
+               </div>
+
+               <div class="main_width inline"><span>Ширинна, мм:</span> <input type='text' id='width' value='' placeholder="Введите ширину"><span class="widthExceeded"></span></div>
+               <div class="inline">Высота, мм: <input type='text' id='height'  value='' placeholder="Введите высоту"><span class="heightExceeded"></span></div>
+               <div class="inline">Площадь, м&#178;: <input type='text'  id='area' readonly></div>
+              
+               <form class="configurations">
+                  <div class="mosquitoSize">
+                     Размер:
+                     <p><input type="radio" name='mosquitoSize' value="Сет. прой." checked>Сетевой пройом</p>
+                     <p><input type="radio" name='mosquitoSize' value="Габ. разм.">Габаритный размер</p>
+                  </div>
+                  <div class="bottomCorner">
+                     Нижний уголок:
+                     <p><input type="radio" name='bottomCorner' value="Без уголока" checked>Без уголока</p>
+                     <p><input type="radio" name='bottomCorner' value="Ниж. угол.">Нижний уголок</p>
+                  </div>
+               </form>
+               <div>
+              <div class="boxMarkup inline">
+                      НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="mosquito" value="Добавить в бланк" >
+               </div>
+               <div>
+               </div>
+               <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               <!-- <div class="currencyConverter inline">Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> <span class="newConverterPrice"></span></div> -->
+               <div class="totalCost inline" >Общая стоимость: <span data-totalCost='mosquito'></span>  <span data-totalCostHryvnia='mosquito'></span></div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='mosquito'>
+               <div id="secreen_mosquito_net" class="screen_blank none" data-viewInBlank="mosquito" >
+                  <ul>
+                     <li class="number_of_blanks">_</li>
+                     <li class="system_and_color">Система и Цвет</li>
+                     <li class="width">Ширина мм</li>
+                     <li class="height">Высота мм</li>
+                     <li class="control">Упр L/R</li>
+                     <li class="quantity">Количество</li>
+                     <li class="fastening">Крепление</li>
+                     <li class="remark">Примечание</li>
+                  </ul>
+         
+               </div>
+
+               <!-- <div class="footer"> -->
+                  <div id="mosquitoNetBlank_download" class="download_blank " data-view='mosquito'  data-viewinblank="mosquito" >
+                     <button  onclick="exportHTML('mosquitoNetBlank', 'Москит');"><span>Скачать блак "Москитные сетки" </span><span class="amount_goods"></span></button> 
+                     <p class="blank_error none">Заполните данные дилера</p> 
+                  </div>
+                   
+               <!-- </div> -->
+               
+            </div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#mosquito_net .main_table" ></a>
+               <a href="#mosquito_net .customer_data_box" > </a>
+               <a href="#mosquito_net .priceСalculation" ></a>
+               <a href="#mosquito_net .screen_blank_box" > </a>
+            </div>
+         </section>
+
+         <section id="additonal_components" class='one_window'>
+            <div class='additonal_components main_table'>
+               <ul class='one-row'>
+                  <li>Дополнителные комплектующие</li>
+                  <li>Цена</li>
+                  
+               </ul>
+            </div>
+
+            <div class="customer_data_box" data-flyElement="additonal_components"></div>
+
+            <div id='calculationAdditonalComponents' class="priceСalculation">
+               <div class='productSelect'>
+                  <!-- в этот тег добавляются два тега select-->
+               </div>
+               <form class="configurations">
+                  <div>
+                     <p>Цвет:</p>
+                     <p><input type="radio" name="colorSystem" value="Бел." checked>Белый</p>
+                     <p><input type="radio" name="colorSystem" value="Кор.">Коричневый</p>
+                  </div>
+                </form>
+               <div class="currencyConverter inline">
+                  <div class="currencyConverterContainer inline"></div>
+                  <span class="newConverterPrice"></span> <span>грн</span>
+               </div>
+               
+               <div>
+                 <!--  <div class="add_remark">
+                     <textarea placeholder="Добавить примечание"></textarea>
+                  </div> -->
+                  <div class="boxMarkup inline">
+                     НАЦЕНКА:
+                     <select class="selectMarkup">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="30">30%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                        <option value="45">45%</option>
+                        <option value="50">50%</option>
+                        <option value="55">55%</option>
+                        <option value="60">60%</option>
+                        <option value="65">65%</option>
+                        <option value="70">70%</option>
+                        <option value="75">75%</option>
+                        <option value="80">80%</option>
+                        <option value="85">85%</option>
+                        <option value="90">90%</option>
+                        <option value="95">95%</option>
+                        <option value="100">100%</option>
+                     </select>
+                  </div>
+                  <input type='submit' id='count' value='Посчитать'>
+                  <input type="submit" id="add_to_blank" data-addToWindowBlank="additonal_components" value="Добавить в бланк" >
+
+                  <div  class="priceProd inline" ><span>Цена: </span> <span id='price'></span> <span>$</span></div>
+                  <div class="currencyConverter inline">
+                     <div class="currencyConverterContainer inline"></div>
+                     <span class="newConverterPrice"></span> <span>грн</span>
+                  </div>
+                  
+                  <div class="totalCost inline" >Общая стоимость: <span data-totalCost='additonal_components'></span>  <span data-totalCostHryvnia='curtains'></span></div>
+               </div>
+            </div>
+
+            <div class="screen_blank_box" data-flyElement='additonal_components'></div>
+            <div class="screen_blank_box" data-flyElement='additonal_components'>
+               <div id="screen_blanks_additonal_components" class="screen_blank none" data-viewInBlank="additonal_components" >
+                  <ul>
+                     <li class="number_of_blanks">_</li>
+                     <li class="system_and_color">Система и Цвет</li>
+                     <li class="width">Ширина мм</li>
+                     <li class="height">Высота мм</li>
+                     <li class="control">Упр L/R</li>
+                     <li class="quantity">Количество</li>
+                     <li class="fastening">Крепление</li>
+                     <li class="remark">Примечание</li>
+                  </ul>
+               </div>
+
+               <!-- <div class="footer">      -->
+                  <div id="additonal_components_download" class="download_blank " data-view='additonal_components' data-viewInBlank="additonal_components" >
+                     <button  onclick="exportHTML('additonalComponentsBlank','Дополнителные комплектующие'); "><span>Скачать блак "Рулонные шторы"</span><span class="amount_goods"></span></button>
+                     <p class="blank_error none">Заполните данные дилера</p>                     
+                  </div>
+                  
+               <!-- </div> -->
+            </div>
+
+            <div class="navigateCalculator">
+               <a href=".switch_tabs" ></a>
+               <a href="#additonal_components .main_table" ></a>
+               <a href="#additonal_components .customer_data_box" > </a>
+               <a href="#additonal_components .priceСalculation" ></a>
+               <a href="#additonal_components .screen_blank_box" > </a>
+            </div>
+            
+         </section>
+<!-- ----------------------------------------------------------------------------------------------- -->
+      </main>
+       <footer class="contact_information">
+         <ul>
+            <li><a href="mailto:jbpro24h@gmail.com" target="_blank">jbpro24h@gmail.com</a></li>
+            <li><a href="viber://chat?number=+380938224429" target="_blank">+38 (093) 822 44 29 (Viber)</a></li>
+            <li><a href="tel:+380964333356" target="_blank">+38 (096) 433 33 56</a></li>
+            <li><a href="https://www.jbproduction.com.ua" target="_blank">www.jbproduction.com.ua</a></li>
+         </ul>
+      </footer>
+
+      <!-- Курс валют который летает между бланками -->
+      <div class="flyingCurrencyConverter"> Курс $ : <input type="text" id="exchangeRates" placeholder="Введите курс"> </div>
+
+
+
+
+      <div id="all-blank">
+         
+
+
+         <div id="curtainsBlank">
+            <table id="customer-information" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+
+            <table id="all-product" style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 188%; border-collapse: collapse;border-spacing: 0px;">
+               <tr>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;"></td>
+                  <td width="188"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Система и Цвет</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Ширина мм</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Высота мм</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Упр. L / R</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Кол-во</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Крепление</td>
+                  <td width="100"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Примечание</td>
+               </tr>
+            </table>
+            
+            <div style="height: 30px;">&#160;</div>
+            
+            <table id="customer-information-bottom" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+         </div>
+         <!-- -------------------------------- -->
+         <div id="horizontalVenusBlank">
+            <table id="customer-information" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+
+            <table id="all-product" style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 188%; border-collapse: collapse;border-spacing: 0px;">
+               <tr>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;"></td>
+                  <td width="188"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Система и Цвет</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Ширина мм</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Высота мм</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Упр. L / R</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Кол-во</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Крепление</td>
+                  <td width="100"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Примечание</td>
+               </tr>
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+            
+            <table id="customer-information-bottom" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+
+         </div>
+         <!-- -------------------------------- -->
+         <div id="horizontalStandardBlank">
+            <table id="customer-information" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+     
+   
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+
+            <table id="all-product" style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 188%; border-collapse: collapse;border-spacing: 0px;">
+   
+               <tr>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;"></td>
+                  <td width="188"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Система и Цвет</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Ширина мм</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Высота мм</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Упр. L / R</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Кол-во</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Крепление</td>
+                  <td width="100"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Примечание</td>
+               </tr>
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+            
+            <table id="customer-information-bottom" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+         </div>
+         <!-- -------------------------------- -->
+         <!-- новый вертикальный бланк -->
+         <div id="nweVerticalBlank">
+            <table id="customer-information" style="padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+         
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+
+            <table id="all-product" style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 188%; border-collapse: collapse;border-spacing: 0px;">
+               <tr>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;"></td>
+                  <td width="188"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Система и Цвет</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Ширина мм</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Высота мм</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Упр. L / R</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Кол-во</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Крепление</td>
+                  <td width="100"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Примечание</td>
+               </tr>
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+            
+            <table id="customer-information-bottom" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+         </div>
+         <!-- -------------------------------- -->
+         <div id="mosquitoNetBlank">
+            <table id="customer-information" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+       
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+
+            <table id="all-product" style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 188%; border-collapse: collapse;border-spacing: 0px;">
+               <tr>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;"></td>
+                  <td width="188"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Система и Цвет</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Ширина мм</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Высота мм</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Упр. L / R</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Кол-во</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Крепление</td>
+                  <td width="100"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Примечание</td>
+               </tr>
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+            
+            <table id="customer-information-bottom" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+         </div>  
+
+         <!-- -------------------------------- -->
+         <div id="additonalComponentsBlank">
+            <table id="customer-information" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+       
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+
+            <table id="all-product" style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 188%; border-collapse: collapse;border-spacing: 0px;">
+               <tr>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;"></td>
+                  <td width="188"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Система и Цвет</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Ширина мм</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Высота мм</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Упр. L / R</td>
+                  <td width="50"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Кол-во</td>
+                  <td width="30"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Крепление</td>
+                  <td width="100"  style="  padding: 5px 10px;box-sizing:border-box;font-size: 11px;border:1px solid black; margin: 0;font-weight: 900;">Примечание</td>
+               </tr>
+            </table>
+
+            <div style="height: 30px;">&#160;</div>
+            
+            <table id="customer-information-bottom" style=" padding: 5px 10px;box-sizing:border-box;font-size: 11px;width: 100%; border-collapse: collapse;border-spacing: 0px;">
+            </table>
+         </div>
+      </div>
+
+      <script>
+          require('./render.js')
+      </script>
+
+
+      <script src="assets/libs/jquery-3.5.1.min.js"></script>
+      <!-- <script src='assets/database.js'></script> -->
+      <script src="assets/database.js"></script>
+
+
+
+
+      <!-- Навигация внутри калькуляторов -->
+      <script type="text/javascript" src="assets/modulesJS/navigateCalculator.js"></script>
+
+      <!-- конвертер валют и наценка на товар. функции используются в продсчете калькулятора -->
+      <script src="assets/modulesJS/converterAndMarkup.js"></script>
+
+      <!-- Данные клиента , ее перемещение между вкладками -->
+      <script src="assets/modulesJS/customerData.js"></script>
+
+      <!-- переключение между бланками, перекидывание кнопок скачивания бланка и конвертера валют в нужные места -->
+      <script src="assets/modulesJS/switchTabs.js"></script>
+
+      <!-- подключение модулей созданиен таблицы -->
+      <script src='assets/modulesJS/newCreatindGoodsTables.js'></script>
+
+      <!-- Все дополнительные конфигурации калькулятора -->
+      <script src="assets/modulesJS/additionalConfiguration.js"></script>
+
+      <!-- Всплытие предупреждени и недобавление товаров в бланк при разных условиях -->
+      <script src="assets/modulesJS/blockGoods.js"></script>     
+
+      <!--  Изменение примечания товара -->
+      <script src="assets/modulesJS/blank/editRemark.js"></script>
+
+
+      <!-- калькулятор для рулонных штор -->
+      <script src="assets/modulesJS/rollerCurtainsCalculate/rollerCurtainsCalculate.js"></script>
+      <script src="assets/modulesJS/rollerCurtainsCalculate/rollerCurtainsCalculateReady.js"></script>
+
+      <!-- Горизонтальные жадюзи -->
+      <script src="assets/modulesJS/horizontalCalculate/horizontalCalculate.js"></script>
+
+      <!-- калькурятор для вертикальных таблиц -->
+      <script src="assets/modulesJS/verticalCalculate/verticalCreateTable.js"></script>
+      <script src="assets/modulesJS/verticalCalculate/verticalCalculation.js"></script>
+
+      <!-- москитные сетки -->
+      <script src="assets/modulesJS/mosquitoNet/mosquitoCalculate.js"></script>
+      <script src="assets/modulesJS/blank/allOperationsRepeatingElements.js"></script>
+      <script src="assets/modulesJS/blank/queueGoodsInGroupendTabs.js"></script>
+
+      <!-- дополнителные комплектующие -->
+      <script src="assets/modulesJS/additionalComponents/additionalComponents.js"></script>
+
+      <script src="assets/modulesJS/blank/creatingOrgerBlank.js"></script>
+      <script src="assets/modulesJS/blank/addToBlank.js"></script>
+      <script src="assets/modulesJS/blank/addToWindowBlankInForm.js"></script>
+      <script src="assets/modulesJS/totalCost.js"></script>
+      <script src='assets/app.js'></script>
+   </body>
+</html>

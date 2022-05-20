@@ -1,0 +1,8 @@
+
+/*Бланки для документа*/
+#all-blank{
+	position: absolute;
+	width: 50vw;	
+	overflow: hidden;
+	left: -100vw;
+}
