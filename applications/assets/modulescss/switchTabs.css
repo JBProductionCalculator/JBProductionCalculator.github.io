@@ -1,0 +1,41 @@
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*Преключение окон*/
+
+
+
+main{
+	display: flex;
+}
+
+main .one_window{
+	min-width: 100vw;
+	display: none;
+}
+
+main .one_window:first-child{
+	display: flex;
+}
+
+
+#switch_tabs ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+#switch_tabs li {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: #93d1ee;
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+.click_tab{
+	background: rgba(255,255,255,0.8)!important;
+	color: black!important;
+	border: 1px solid black;
+}
